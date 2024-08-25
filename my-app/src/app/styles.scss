@@ -1,13 +1,14 @@
 // src/styles.scss
-$primary-color: #3490dc;
+$primary-color: #bfcbd4;
 
 body {
+  background:none;
   background-color: $primary-color;
-  font-family: Arial, sans-serif;
+ 
 }
 
 .app-header {
-  background-color: darken($primary-color, 10%);
+  background-color: $primary-color;
   padding: 20px;
   text-align: center;
 }
