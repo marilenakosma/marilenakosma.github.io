@@ -1,5 +1,19 @@
+
 {
+  "name": "my-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
+    "react-scripts": "^5.0.1",
     "sass": "^1.77.8"
+  },
+  "devDependencies": {
+    
   }
 }
