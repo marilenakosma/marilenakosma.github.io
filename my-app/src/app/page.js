@@ -1,7 +1,12 @@
-
-import styles from "./styles.scss";
-
-
+// maps to root `/` URL
+ 
+import styles from './variables.module.scss'
+ 
 export default function Page() {
-  return <h1 className={styles.header}>Hello, Home!</h1>;
+  return (
+    <header className={styles.header}>
+      <h1 style={{ color: styles.primaryColor }}>Hello, Next.js!</h1>
+    </header>
+  );
 }
+
