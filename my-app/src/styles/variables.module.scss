@@ -1,0 +1,36 @@
+// variables.module.scss
+@import "mixins";
+$primary-color: #2a5675;
+$background-color:#85a8c2;
+$header-text-color:#ffff;
+
+.page {
+background-color:$background-color;
+min-height:100vh;
+padding:30px;
+margin:-10px;
+}
+.header {
+  background-color: $background-color;
+  color:$header-text-color;
+  padding: 20px;
+  text-align: center;
+  border-radius:5px;
+  font-family:'Montserrat',sans-serif;
+
+  .title {
+    font-size:36px;
+    margin:30px;
+    font-weight: 300;
+  }
+
+  .subtitle {
+    font-size:34px;
+    margin-top:-71px;
+    text-align:center;
+    padding-left:330px;
+    font-style: normal;
+    font-weight: 600;
+  }
+}
+
