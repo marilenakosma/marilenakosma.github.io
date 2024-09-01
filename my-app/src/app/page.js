@@ -12,8 +12,8 @@ export default function Page() {
       <main>
       <Image
         src="/Image/stock-photo.jpg"
-        width={200}
-        height={200}
+        width={230}
+        height={207}
         alt="Picture of the authofr"
         className={styles.Img}
       />
