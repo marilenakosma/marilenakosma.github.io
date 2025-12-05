@@ -1,7 +1,7 @@
 import { motion } from 'motion/react'
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
+import { Room } from './canvas/Room'
 
 export const Hero = () =>  {
    return( <section className="relative w-full h-screen 
@@ -24,7 +24,7 @@ export const Hero = () =>  {
              </p>
            </div>
         </div>
-        <ComputersCanvas/>
+        <Room/>
     </section>)
 }
 
