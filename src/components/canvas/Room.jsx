@@ -3,6 +3,9 @@ import React,{Suspense,useEffect,useState} from 'react'
 import {Canvas, useFrame } from '@react-three/fiber'
 import {OrbitControls,Preload,useGLTF } from '@react-three/drei'
 import {useMediaQuery} from 'react-responsive'
+import { Model } from '../Models/Room'
+import { Lights } from '../Models/Lights'
+
 
 //import CanvasLoader from '../Loader';
 
@@ -11,27 +14,46 @@ export const Room = () => {
   const isTablet = useMediaQuery({ query: '(max-width:1024px)' });
   const isMobile = useMediaQuery({ query: '(max-width:768px)' });
 
-  const computer = useGLTF('./desktop_pc/Gaming-Room.glb');
   return (
-    <Canvas camera={{position:[0,0,15],fov:45}}>
-      <ambientLight intensity={0.2} color="#1a1a40"/>
-      <directionalLight position={[5,5,5]} intensity={5} />
-      
-      <OrbitControls
-        enablePan={false}
-        enableZoom={!isTablet}
-        maxDistance={20}
-        minDistance={5}
-        maxPolarAngle={Math.PI / 5}
-        minPolarAngle={Math.PI / 5}
-      />
-
-      <mesh>
-        <boxGeometry args={[1,1,1]} />
-        <meshStandardMaterial color="blue"/>
-      </mesh>
-    </Canvas>
-  )
+  <Canvas 
+    camera={{
+      position: isMobile ? [4, 2, 6] : [6, 3, 8],
+      fov: 50,
+      near: 0.1,
+      far: 1000
+    }}
+    shadows
+    gl={{ 
+      antialias: true,
+      logarithmicDepthBuffer: true
+    }}
+    style={{ background: 'transparent' }}
+  >
+    <Lights/>
+    
+    <OrbitControls
+      enablePan={false}
+      enableZoom={true}
+      enableRotate={true}
+      maxDistance={12}
+      minDistance={4}
+      maxPolarAngle={Math.PI / 2}
+      minPolarAngle={Math.PI / 6}
+      target={[0, 0, 0]}
+      autoRotate={false}
+      autoRotateSpeed={0.5}
+    />
+     
+    <group
+      scale={isMobile ? 1 : isTablet ? 1.2 : 1.8}
+      position={[0, -1.5, 0]}
+      rotation={[0, -Math.PI / 4, 0]}
+    >
+      <Model />
+    </group>
+    <Preload all />
+  </Canvas>
+)
 }
 
 export default Room

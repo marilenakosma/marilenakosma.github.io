@@ -6,28 +6,22 @@ Command: npx gltfjsx@6.5.3 Gaming-Room.glb
 import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export function Room(props) {
-  const { nodes, materials } = useGLTF('/Gaming-Room.glb')
+export function Model(props) {
+  const { nodes, materials } = useGLTF('/room/Gaming-Room.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.flower037.geometry} material={materials['furniture_01.002']} position={[-0.034, 0.749, -1.47]} rotation={[0, -1.571, 0]} scale={[0.618, 0.51, 0.671]} />
       <mesh geometry={nodes.flower038.geometry} material={materials['furniture_01.002']} position={[-1.401, 0.751, -0.636]} rotation={[0, -1.571, 0]} scale={[0.618, 0.51, 0.671]} />
       <group position={[-1.568, 1.796, 0.024]} rotation={[0, -1.571, 0]} scale={[0.426, 0.275, 1]}>
         <mesh geometry={nodes.Mesh658.geometry} material={materials.furniture_01} />
-        <mesh geometry={nodes.Mesh658_1.geometry} material={materials['Material.009']} />
       </group>
-      <mesh geometry={nodes.armchair001.geometry} material={materials.Black} position={[0.745, 0.019, -0.411]} rotation={[0, -0.495, 0]} scale={[0.814, 0.912, 0.777]} />
+      
       <mesh geometry={nodes.bed005.geometry} material={materials.furniture_01} position={[-0.519, 0.019, 1.12]} rotation={[0, 1.567, 0]} scale={[1.018, 1, 1]} />
       <mesh geometry={nodes.door011.geometry} material={materials.furniture_01} position={[1.337, 0.019, -0.942]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.635, 0.754, 0.696]} />
       <mesh geometry={nodes.door022.geometry} material={materials.furniture_01} position={[1.337, 0.019, -0.942]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.635, 0.754, 0.696]} />
       <group position={[-1.298, 0.75, -0.897]} rotation={[0, 1.144, 0]}>
         <mesh geometry={nodes.Mesh308.geometry} material={materials.furniture_01} />
         <mesh geometry={nodes.Mesh308_1.geometry} material={materials['Material.011']} />
-      </group>
-      <group position={[-0.9, 0.793, -1.233]} rotation={[0, 0.896, 0]}>
-        <mesh geometry={nodes.Mesh6484.geometry} material={materials.Black} />
-        <mesh geometry={nodes.Mesh6484_1.geometry} material={materials.Pink} />
-        <mesh geometry={nodes.Mesh6484_2.geometry} material={materials['Light Blue']} />
       </group>
       <mesh geometry={nodes.electronics022.geometry} material={materials.furniture_01} position={[-0.851, 0.755, -1.133]} rotation={[-1.986, -1.57, -1.986]} />
       <group position={[-1.178, 0.759, -1.349]} rotation={[-Math.PI, -0.659, 0]} scale={-1}>
@@ -61,24 +55,18 @@ export function Room(props) {
       <mesh geometry={nodes.prop069.geometry} material={materials.furniture_01} position={[-1.519, 1.147, 0.892]} rotation={[0, 1.571, 0]} scale={0.827} />
       <mesh geometry={nodes.prop076.geometry} material={materials.furniture_01} position={[-1.487, 1.338, 1.233]} rotation={[0, 1.571, 0]} />
       <mesh geometry={nodes.prop.geometry} material={materials.furniture_01} position={[-1.517, 1.099, 0.873]} rotation={[0, 1.571, 0]} scale={0.741} />
-      <mesh geometry={nodes.Plane.geometry} material={materials['Material.008']} position={[0, -0.029, 0.003]} rotation={[0, -Math.PI / 2, 0]} scale={[1.645, 0.888, 1.645]} />
+      
       <mesh geometry={nodes.Cube.geometry} material={materials['Material.008']} position={[1.008, 1.092, -1.244]} rotation={[0, -1.554, 0]} scale={[0.317, 1.095, 0.642]} />
       <mesh geometry={nodes.Plane002.geometry} material={materials['Material.008']} position={[0, -0.029, 0]} rotation={[0, -Math.PI / 2, 0]} scale={[1.645, 0.888, 1.645]} />
       <group position={[-1.409, 1.417, 1.042]} rotation={[0, -1.571, 0]}>
         <mesh geometry={nodes.Mesh131.geometry} material={materials['Material.012']} />
         <mesh geometry={nodes.Mesh131_1.geometry} material={materials['Material.013']} />
       </group>
-      <group position={[-0.646, 1.595, -1.636]} rotation={[-Math.PI, 0, 0]} scale={[-0.914, -1, -1]}>
-        <mesh geometry={nodes.Mesh564.geometry} material={materials['Material.010']} />
-        <mesh geometry={nodes.Mesh564_1.geometry} material={materials['Material.013']} />
-        <mesh geometry={nodes.Mesh564_2.geometry} material={materials['Material.012']} />
-        <mesh geometry={nodes.Mesh564_3.geometry} material={materials['Material.013']} />
-      </group>
-      <group position={[-0.203, 0.749, -1.233]} rotation={[-0.031, 0.2, 0.006]} scale={[0.017, 0.019, 0.017]}>
-        <mesh geometry={nodes.Plane009.geometry} material={materials['Material.014']} />
-        <mesh geometry={nodes.Plane009_1.geometry} material={materials['Material.015']} />
-        <mesh geometry={nodes.Plane009_2.geometry} material={materials['Material.016']} />
-        <mesh geometry={nodes.Plane009_3.geometry} material={materials['Material.017']} />
+      <group position={[-0.203, 0.749, -1.233]} rotation={[-0.031, 0.2, 0.006]} scale={[0.017, 0.019, 0.017]}>       
+        <mesh geometry={nodes.Plane009_1.geometry} material={materials['Material.015']} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+        <mesh geometry={nodes.Plane009_2.geometry} material={materials['Material.016']} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>        
       </group>
       <group position={[0.221, 1.043, -1.297]} rotation={[Math.PI, 0, Math.PI]} scale={[-0.111, -0.271, -0.254]}>
         <mesh geometry={nodes.Cube116.geometry} material={materials['Material.006']} />
@@ -178,22 +166,31 @@ export function Room(props) {
       </group>
       <group position={[-0.533, 0.759, -1.255]} scale={[0.212, 0.006, 0.068]}>
         <mesh geometry={nodes.Cube022.geometry} material={materials['Light Blue']} />
-        <mesh geometry={nodes.Cube022_1.geometry} material={materials.Pink} />
+        <mesh geometry={nodes.Cube022_1.geometry} material={materials['Light Blue']} />
         <mesh geometry={nodes.Cube022_2.geometry} material={materials['Light Blue']} />
-        <mesh geometry={nodes.Cube022_3.geometry} material={materials.White} />
-        <mesh geometry={nodes.Cube022_4.geometry} material={materials.Material} />
+        <mesh geometry={nodes.Cube022_3.geometry} material={materials.White}/>
+        <mesh geometry={nodes.Cube022_4.geometry} material={materials.Material}/>
       </group>
-      <mesh geometry={nodes.Cube001.geometry} material={materials['Material.012']} position={[-1.551, 0.709, -0.687]} rotation={[0, -1.571, 0]} scale={[0.881, 0.006, 0.008]} />
-      <mesh geometry={nodes.Cube002.geometry} material={materials['Material.106']} position={[-0.792, 0.709, -1.551]} scale={[0.766, 0.006, 0.008]} />
-      <mesh geometry={nodes.Cube003.geometry} material={materials['Material.012']} position={[-1.551, 0.026, -0.687]} rotation={[0, -1.571, 0]} scale={[0.881, 0.006, 0.008]} />
-      <mesh geometry={nodes.Cube004.geometry} material={materials['Material.106']} position={[-0.792, 0.026, -1.551]} scale={[0.766, 0.006, 0.008]} />
-      <mesh geometry={nodes.Cube005.geometry} material={materials['Material.012']} position={[-0.37, 0.026, 0.61]} scale={[0.881, 0.006, 0.008]} />
-      <mesh geometry={nodes.Cube006.geometry} material={materials['Material.106']} position={[-0.561, 0.026, 1.639]} scale={[1.094, 0.006, 0.008]} />
-      <mesh geometry={nodes.Cube008.geometry} material={materials['Material.012']} position={[0.522, 0.026, 1.121]} rotation={[0, -1.571, 0]} scale={[0.526, 0.006, 0.008]} />
-      <mesh geometry={nodes.Sphere.geometry} material={materials['Material.105']} position={[1.394, 1.558, -0.556]} rotation={[0, -1.571, 0]} scale={-0.112} />
-      <mesh geometry={nodes.Plane003.geometry} material={materials.Black} position={[-0.086, -0.093, -0.042]} scale={12.646} />
+      <mesh geometry={nodes.Cube001.geometry} material={materials['Material.012']} position={[-1.551, 0.709, -0.687]} rotation={[0, -1.571, 0]} scale={[0.881, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Cube002.geometry} material={materials['Material.106']} position={[-0.792, 0.709, -1.551]} scale={[0.766, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Cube003.geometry} material={materials['Material.012']} position={[-1.551, 0.026, -0.687]} rotation={[0, -1.571, 0]} scale={[0.881, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Cube004.geometry} material={materials['Material.106']} position={[-0.792, 0.026, -1.551]} scale={[0.766, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Cube005.geometry} material={materials['Material.012']} position={[-0.37, 0.026, 0.61]} scale={[0.881, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Cube006.geometry} material={materials['Material.106']} position={[-0.561, 0.026, 1.639]} scale={[1.094, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Cube008.geometry} material={materials['Material.012']} position={[0.522, 0.026, 1.121]} rotation={[0, -1.571, 0]} scale={[0.526, 0.006, 0.008]} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Sphere.geometry} material={materials['Material.105']} position={[1.394, 1.558, -0.556]} rotation={[0, -1.571, 0]} scale={-0.112} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
+      <mesh geometry={nodes.Plane003.geometry} material={materials.Black} position={[-0.086, -0.093, -0.042]} scale={12.646} material-polygonOffset={true}
+      material-polygonOffsetFactor={1}/>
     </group>
   )
 }
 
-useGLTF.preload('/Gaming-Room.glb')
+useGLTF.preload('/room/Gaming-Room.glb')
