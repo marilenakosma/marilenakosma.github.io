@@ -17,9 +17,9 @@ export const Hero = () => {
            speed={1.0}
        />*/}
 
-<div style={{ width: '100%', height: '600px', position: 'relative' }}>
+<div style={{ width: '100%', height: '100%', position: 'relative' }}>
   <Grainient
-    color1="#80ffff"
+    color1="#0080ff"
     color2="#5227ff"
     color3="#B19EEF"
     timeSpeed={0.25}
@@ -43,20 +43,21 @@ export const Hero = () => {
     zoom={0.9}
   />
 </div>
+{/*bg-[rgba(0,0,0,0.3)] */}
       <div
-        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 `}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
+        <div className='flex flex-col justify-center items-center mt-5 text-shadow-lg'>
           
           {/*<div className='w-5 h-5 rounded-full bg-[#915EFF]' /> 
           <div className='w-1 sm:h-80 h-40 violet-gradient' /> */}
         </div> 
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white text-shadow-lg`}>
             Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena</span>,
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 text-shadow-lg`}>
             a <span className='text-[#F64FFF]'>fullstack</span> developer, who cares about <br></br> UI/UX. I work mainly with React and <br></br>
             React Native, and strive to learn about <br></br> how design decisions affect real users.
           </p>

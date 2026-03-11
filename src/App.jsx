@@ -23,7 +23,7 @@ const App = () =>  {
        <Hero/>
       </div>
       {/*<About/>*/}
-      {/*<Education/> */}
+      <Education/> 
       {/*<Tech/>*/}
       {/*<Projects/>*/} 
       <div className="relative z-0">
