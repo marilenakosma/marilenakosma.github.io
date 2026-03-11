@@ -11,8 +11,18 @@ export const Navbar = () =>  {
         <nav
         className={
             `${styles.paddingX} w-full flex items-center 
-            py-5 fixed top-0 z-20 bg-primary`
+            py-5 fixed top-0 z-20  bg-[rgba(255,255,255,0.1)] 
+            [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
+            border border-transparent border-b-neutral-400`
         }>
+          {/*}  <nav
+        className={
+        border-b-[#f36afb]
+            `${styles.paddingX} w-full flex items-center 
+            py-5 fixed top-0 z-20 bg-[rgba(255,255,255,0.2)] 
+            [box-shadow:0_4px_30px_rgba(0,0,0,0.1)] backdrop-filter backdrop-blur-[5px]
+            border border-[rgba(255,255,255,0.3)]`
+        }></nav> */}
             <div className="w-full flex justify-between
             items-center max-w-7xl mx-auto">
              <Link 
@@ -23,11 +33,13 @@ export const Navbar = () =>  {
                  window.scrollTo(0,0)
                }}
               >
+                
 
-                <img src={logo} alt="logo" className="w-9 h-9 
-                object-contain" />
+                { /* < img src={logo} alt="logo" className="w-9 h-9 
+                object-contain"> */ }
+
                 <p className="text-white text-[18px] font-bold cursor-pointer flex">
-                    Maria-Eleni Kosma 
+                    Marilena Kosma 
                 </p>
              </Link>
              
@@ -59,7 +71,7 @@ export const Navbar = () =>  {
                  <img 
                  src={toggle ? close : menu}
                  alt="menu"
-                 className="w-[28px] h-[28px]
+                 className="w-7 h-7
                  object-contain cursor-pointer"
                  onClick={() => setToggle(!toggle)} />
 

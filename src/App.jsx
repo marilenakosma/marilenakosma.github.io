@@ -22,13 +22,13 @@ const App = () =>  {
        <Navbar/>
        <Hero/>
       </div>
-      <About/>
-      <Education/>
-      <Tech/>
-      <Projects/>
+      {/*<About/>*/}
+      {/*<Education/> */}
+      {/*<Tech/>*/}
+      {/*<Projects/>*/} 
       <div className="relative z-0">
-        <Contact/>
-        <StarsCanvas/>
+       {/* <Contact/>*/}
+        
       </div>
     </div>
     </BrowserRouter>  
