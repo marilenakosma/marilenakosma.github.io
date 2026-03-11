@@ -8,7 +8,6 @@ import { About } from './components/About'
 import { Education } from './components/Education'
 import { Tech } from './components/Tech'
 import { Projects } from './components/Projects'
-import { StarsCanvas } from './components/StarsCanvas'
 import { Contact } from './components/Contact'
 
 const App = () =>  {
