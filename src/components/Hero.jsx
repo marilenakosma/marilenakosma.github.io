@@ -3,7 +3,7 @@ import { motion } from 'motion/react'
 import { styles } from '../styles'
 //import { Room } from './canvas/Room'
 import Iridescence from './Iridescence';
-import LightPillar from './LightPillar';
+//import LightPillar from './LightPillar';
 import Grainient from './Grainient';
 
 export const Hero = () => {
@@ -17,35 +17,10 @@ export const Hero = () => {
            speed={1.0}
        />*/}
 
-<div style={{ width: '100%', height: '100%', position: 'relative' }}>
-  <Grainient
-    color1="#0080ff"
-    color2="#5227ff"
-    color3="#B19EEF"
-    timeSpeed={0.25}
-    colorBalance={0}
-    warpStrength={1}
-    warpFrequency={5}
-    warpSpeed={2}
-    warpAmplitude={50}
-    blendAngle={0}
-    blendSoftness={0.05}
-    rotationAmount={500}
-    noiseScale={2}
-    grainAmount={0.1}
-    grainScale={2}
-    grainAnimated={false}
-    contrast={1.5}
-    gamma={1}
-    saturation={1}
-    centerX={0}
-    centerY={0}
-    zoom={0.9}
-  />
-</div>
 {/*bg-[rgba(0,0,0,0.3)] */}
       <div
-        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5 `}
+        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX}
+         flex flex-row items-start gap-5 `}
       >
         <div className='flex flex-col justify-center items-center mt-5 text-shadow-lg'>
           
@@ -84,6 +59,7 @@ export const Hero = () => {
         </a>
       </div>
     </section>
+    
   );
 };
 

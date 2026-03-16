@@ -38,7 +38,8 @@ export const Navbar = () =>  {
                 { /* < img src={logo} alt="logo" className="w-9 h-9 
                 object-contain"> */ }
 
-                <p className="text-white text-[18px] font-bold cursor-pointer flex">
+                <p className="text-white text-[18px] 
+                font-bold cursor-pointer flex">
                     Marilena Kosma 
                 </p>
              </Link>
@@ -76,7 +77,9 @@ export const Navbar = () =>  {
                  onClick={() => setToggle(!toggle)} />
 
                   <div className={`${ !toggle ? "hidden" : "flex"} 
-                   p-8 black-gradient absolute top-[60px] 
+                   p-8  absolute top-[60px] bg-[rgba(255,255,255,0.2)] 
+                   [box-shadow:0_4px_30px_rgba(0,0,0,0.8)]
+                   border border-neutral-400 backdrop-blur-xl
                    right-1 mx-4 my-2 min-w-[150px] 
                    z-10 rounded-xl`}
                   >
@@ -89,11 +92,12 @@ export const Navbar = () =>  {
                     className={
                         `${
                             active === link.title
-                            ? "text-white"
-                            : "text-secondary"
+                            ? "text-white decoration-[#F64FFF] underline"
+                            : "text-white"
                         }
                         font-poppins font-medium cursor-pointer
-                        text-[16px]`
+                        text-[16px] [text-shadow:0_4px_30px_rgba(0,0,0,1)]
+                        `
                     }
                     onClick={() => {
                       setToggle(!toggle);
