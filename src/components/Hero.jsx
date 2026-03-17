@@ -33,7 +33,7 @@ export const Hero = () => {
             Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena</span>,
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100 text-shadow-lg`}>
-            a <span className='text-[#F64FFF]'>fullstack</span> developer, who cares about <br></br> UI/UX. I work mainly with React and <br></br>
+            a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br></br> UI/UX. I work mainly with React and <br></br>
             React Native, and strive to learn about <br></br> how design decisions affect real users.
           </p>
         </div>

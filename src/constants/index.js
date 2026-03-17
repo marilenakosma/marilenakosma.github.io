@@ -8,21 +8,33 @@ import {
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
-  git,
+  github,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  brasov,
+  firebase,
+  java,
+  mmkv,
+  net,
+  openstreetmap,
+  postgresql,
+  python,
+  rn,
+  rn2,
+  sqlite,
+  udemy,
+  uxcel,
+  vue,
+  zustand,
+  pada,
+  pada2,
+  opentrivia,
+  serenify-full,
+  serenify-small,
+  quizgame-full,
+  touristguide-small,
+  recipe-full,
 } from "../assets";
 
 export const navLinks = [
@@ -89,20 +101,8 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
     name: "git",
-    icon: git,
+    icon: github,
   },
   {
     name: "figma",
@@ -113,6 +113,34 @@ const technologies = [
     icon: docker,
   },
 ];
+
+const education = [
+  {
+    logo: pada,
+    name: "University of West Attica",
+    description: "Computer Science and Engineering",
+    date: "2020 - 2026"
+  },
+  {
+    logo: brasov,
+    name: "Transilvania University of Brasov",
+    description: "Erasmus+ program",
+    date: "2025"
+  },
+  {
+    logo: pada,
+    name: "Udemy",
+    description: "The Complete Full-Stack Web Development",
+    date: "2025"
+  },
+  {
+    logo: pada,
+    name: "Uxcel",
+    description: "UI/UX Design",
+    date: "2026"
+  },
+
+]
 
 const experiences = [
   {
@@ -198,67 +226,109 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Serenify(thesis)",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A gamified mental health application featuring various self care activities.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        logo: rn2,
+        name: "React Native",
+        //color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        logo: firebase,
+        name: "Firebase",
+        //color: "green-text-gradient",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        logo: mmkv,
+        name: "MMKV",
+        //color: "pink-text-gradient",
+      },
+      {
+        logo: zustand,
+        name: "Zustand",
+        //color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: serenify-full,
+    source_code_link: "https://github.com/marilenakosma/Serenify",
   },
   {
-    name: "Job IT",
+    name: "Tourist Guide",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A desktop application that simulates transportation between major Romanian cities.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        logo: java,
+        name: "Java Swing",
+        //color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        logo: openstreetmap,
+        name: "Open Street Map",
+        //color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        logo: java,
+        name: "Flatlaf",
+        //color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/marilenakosma/TouristGuide/blob/main/README.md",
   },
   {
-    name: "Trip Guide",
+    name: "Quiz Game",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Python-powered interactive desktop quiz application.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        logo: python,
+        name: "Python",
+        //color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        logo: python,
+        name: "PyQt",
+        //color: "green-text-gradient",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        logo: sqlite,
+        name: "sqlite",
+        //color: "pink-text-gradient",
+      },
+      {
+        logo: opentrivia,
+        name:"Open Trivia DB"
+      }
+    ],
+    image: quizgame-full,
+    source_code_link: "https://github.com/marilenakosma/QuizGame",
+  },
+  {
+    name: "Recipe Suggestions",
+    description:
+      "A website that suggests recipes based on ingredients,created with fellow university colleagues.",
+    tags: [
+      {
+        logo: net,
+        name: "ASP.NET(C#)",
+        //color: "blue-text-gradient",
+      },
+      {
+        logo: postgresql,
+        name: "PostgreSQL",
+        //color: "green-text-gradient",
+      },
+      {
+        logo: vue,
+        name: "vue",
+        //color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: recipe-full,
+    source_code_link: "https://github.com/marilenakosma/RecipeSuggestionsProject",
   },
 ];
 
