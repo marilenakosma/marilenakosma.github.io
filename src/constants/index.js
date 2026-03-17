@@ -30,11 +30,11 @@ import {
   pada,
   pada2,
   opentrivia,
-  serenify-full,
-  serenify-small,
-  quizgame-full,
-  touristguide-small,
-  recipe-full,
+  serenifyFull,
+  serenifySmall,
+  quizgameFull,
+  touristguideSmall,
+  recipeFull,
 } from "../assets";
 
 export const navLinks = [
@@ -52,6 +52,7 @@ export const navLinks = [
   },
 ];
 
+/*
 const services = [
   {
     title: "Web Developer",
@@ -93,10 +94,6 @@ const technologies = [
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
   },
@@ -113,6 +110,7 @@ const technologies = [
     icon: docker,
   },
 ];
+*/
 
 const education = [
   {
@@ -142,6 +140,7 @@ const education = [
 
 ]
 
+/*
 const experiences = [
   {
     title: "React.js Developer",
@@ -223,7 +222,7 @@ const testimonials = [
     image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
-
+*/
 const projects = [
   {
     name: "Serenify(thesis)",
@@ -251,7 +250,7 @@ const projects = [
         //color: "pink-text-gradient",
       },
     ],
-    image: serenify-full,
+    image: serenifyFull,
     source_code_link: "https://github.com/marilenakosma/Serenify",
   },
   {
@@ -275,7 +274,7 @@ const projects = [
         //color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image:  touristguideSmall,
     source_code_link: "https://github.com/marilenakosma/TouristGuide/blob/main/README.md",
   },
   {
@@ -303,7 +302,7 @@ const projects = [
         name:"Open Trivia DB"
       }
     ],
-    image: quizgame-full,
+    image: quizgameFull,
     source_code_link: "https://github.com/marilenakosma/QuizGame",
   },
   {
@@ -327,9 +326,9 @@ const projects = [
         //color: "pink-text-gradient",
       },
     ],
-    image: recipe-full,
+    image: recipeFull,
     source_code_link: "https://github.com/marilenakosma/RecipeSuggestionsProject",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { education, projects };

@@ -16,19 +16,39 @@ import javascript from "./tech/javascript.png";
 import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import firebase from "./tech/firebase.png";
+import java from "./tech/java.png";
+import mmkv from "./tech/mmkv.jpg";
+import net from "./tech/net.jpg";
+import postgresql from "./tech/postgresql.png";
+import python from "./tech/python.png";
+import rn from "./tech/rn.png";
+import rn2 from "./tech/rn2.png";
+import sqlite from "./tech/sqlite.jpg";
+import vue from "./tech/vue.png";
+import zustand from "./tech/zustand.png";
+
+import brasov from "./education/brasov.png";
+import pada from "./education/pada.jpg";
+import pada2 from "./education/pada2.jpg";
+import udemy from "./education/udemy.png";
+import uxcel from "../uxcel.jpeg";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+
+import openstreetmap from "./openstreetmap.jpg";
+import opentrivia from "./opentrivia.png";
+import serenifyFull from "./serenifyFull.png";
+import serenifySmall from "./serenifySmall.png";
+import quizgameFull from "./quizgameFull.png";
+import touristguideSmall from "./touristguideSmall.png";
+import recipeFull from "./recipeFull.png";
 
 export {
   logo,
@@ -48,15 +68,33 @@ export {
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  firebase,
+  java,
+  mmkv,
+  net,
+  postgresql,
+  python,
+  rn,
+  rn2,
+  sqlite,
+  vue,
+  zustand,
+  brasov,
+  pada,
+  pada2,
+  udemy,
+  uxcel,
   carrent,
   jobit,
   tripguide,
+  openstreetmap,
+  opentrivia,
+  serenifyFull,
+  serenifySmall,
+  quizgameFull,
+  touristguideSmall,
+  recipeFull,
 };
