@@ -126,13 +126,13 @@ const education = [
     date: "2025"
   },
   {
-    logo: pada,
+    logo: udemy,
     name: "Udemy",
     description: "The Complete Full-Stack Web Development",
     date: "2025"
   },
   {
-    logo: pada,
+    logo: uxcel,
     name: "Uxcel",
     description: "UI/UX Design",
     date: "2026"
