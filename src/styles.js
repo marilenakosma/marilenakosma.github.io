@@ -9,14 +9,21 @@ const styles = {
     "text-[#dfd9ff] font-regular lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 
   sectionHeadText:
-    "text-white font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
+    "text-white text-center font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
   sectionSubText:
     "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 
   educationHeadText:
-     "text-white flex text-center font-semibold md:text-[20px] sm:text-[15px] xs:text-[10px] text-[20px]",
+     "text-white place-items-baseline text-center font-semibold md:text-[20px] sm:text-[16px] xs:text-[10px]",
   educationDescriptionText:
-      "text-white font-light sm:text-[18px] text-[14px] text-secondary tracking-wider"
+      "text-white font-light text-center md:text-[18px] sm:text-[14px] text-secondary tracking-wider",
+  educationDateText:
+     "text-white content-end font-semibold md:text-[20px] sm:text-[16px] xs:text-[10px]",
+
+  projectsHeadText:
+     "mt-4 text-white  text-center font-semibold md:text-[24px] sm:text-[20px] xs:text-[15px]",
+  projectsDescriptionText:
+      "text-white font-light text-center md:text-[18px] sm:text-[14px] text-secondary",
 
 };
 

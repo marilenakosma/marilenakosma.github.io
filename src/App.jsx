@@ -49,7 +49,7 @@ const App = () =>  {
       </div>
       {/*<About/>*/}
       {/*<Tech/>*/}
-      {/*<Projects/>*/} 
+      <Projects/>
       <div className="relative z-0">
        {/* <Contact/>*/}
         

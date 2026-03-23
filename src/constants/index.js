@@ -121,7 +121,7 @@ const education = [
   },
   {
     logo: brasov,
-    name: "Transilvania University of Brasov",
+    name: "University of Brasov",
     description: "Erasmus+ program",
     date: "2025"
   },
@@ -250,7 +250,7 @@ const projects = [
         //color: "pink-text-gradient",
       },
     ],
-    image: serenifyFull,
+    image: serenifySmall,
     source_code_link: "https://github.com/marilenakosma/Serenify",
   },
   {

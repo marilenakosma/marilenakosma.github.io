@@ -8,7 +8,7 @@ import Grainient from './Grainient';
 
 export const Hero = () => {
   return (
-    <section className={`relative w-full h-dvh mx-auto`}>
+    <section className={`relative w-full h-screen mx-auto`}>
         {/*<Iridescence
            //color={[1, 1, 1]}
            color={[0.4,0.3,0.7]}

@@ -16,13 +16,17 @@ import Grainient from './Grainient';
 
 const EducationCard = ({education}) => {
  return (
-    <div className="w-48 h-92 rounded-lg
+  
+    <div className=" sm:w-55 w-55 lg:w-55 sm:h-80 lg:h-80 h-70 rounded-lg
     bg-[rgba(255,255,255,0.2)] 
       [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
-      border border-transparent">
-      <img src={education.logo} 
-         className="w-16 h-16 rounded-4xl flex center"
-         alt="education logo"/>
+      border border-blue-200 grid place-items-baseline 
+      justify-items-center p-2">
+        <div className="mt-8">
+           <img src={education.logo} 
+             className="w-16 h-auto rounded-full mb-2" 
+             alt="education logo"/>
+        </div>
 
       <h1 className={styles.educationHeadText}>
         {education.name}
@@ -32,9 +36,9 @@ const EducationCard = ({education}) => {
        {education.description}
       </p>
 
-      <h3 className={styles.educationHeadText}>
+      <p className={styles.educationDateText}>
        {education.date}
-      </h3>
+      </p>
    
     </div>
  )
@@ -43,15 +47,14 @@ const EducationCard = ({education}) => {
 export const Education = () =>  {
     return (
             <>
-            
-              <p className={styles.sectionSubText}>
-                    Introduction
-               </p>
+               <div className="mb-8">
                 <p className={styles.sectionHeadText}>
-                  Overview
+                  Education
                 </p>
+               </div>
 
-                <div className="grid grid-cols-4">
+                <div className="grid grid-cols-[repeat(auto-fit,minmax(210px,1fr))]
+                  place-items-center gap-4 p-2">
                   {
                     education.map((edu,index) => (
                       <EducationCard
@@ -60,6 +63,9 @@ export const Education = () =>  {
                     ))
                   }
                 </div>
+
+                <div className="mb-30"/>
+
             </>
         )
 }
