@@ -33,7 +33,9 @@ const ProjectCard = ({project}) => {
     </p>
     
     <img src={project.image} 
-         className="object-fit w-90 h-50 place-items-end" 
+         className={ project.name === "Serenify(thesis)"
+          ? "w-40 h-50 flex items-end"
+          : "w-90 h-50"} 
          alt="project image"/>
   </div>)
 
