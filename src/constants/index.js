@@ -25,6 +25,7 @@ import {
   sqlite,
   udemy,
   uxcel,
+  scrimba,
   vue,
   zustand,
   pada,
@@ -129,6 +130,12 @@ const education = [
     logo: udemy,
     name: "Udemy",
     description: "The Complete Full-Stack Web Development",
+    date: "2025"
+  },
+  {
+    logo: scrimba,
+    name: "Scrimba",
+    description: "React.js",
     date: "2025"
   },
   {

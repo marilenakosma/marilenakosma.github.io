@@ -10,14 +10,16 @@ import { Tech } from './components/Tech'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
 import Grainient from './components/Grainient';
+import Pattern from './components/Pattern';
+import Iridescence from './components/Iridescence'
 const App = () =>  {
 
   return (
     <>
     <BrowserRouter>
       <div className="fixed inset-0 -z-3">
-        <Grainient color1="0080ff" //409fff //0080ff //409fff
-    color2="#5227ff"
+        {/*<Grainient color1="0080ff" //409fff //0080ff //409fff
+           color2="#5227ff"
     color3="#B19EEF"
     timeSpeed={0.25}
     colorBalance={0}
@@ -39,7 +41,15 @@ const App = () =>  {
     centerY={0}
     zoom={0.9}
     
-  />
+  />*/}
+       <Iridescence
+           //color={[1, 1, 1]}
+           color={[0.4,0.3,0.7]}
+           mouseReact={false}
+           amplitude={0.1}
+           speed={1.0}
+       />
+      
   </div>
 <div>
   {/*<div className="bg-[rgba(0,0,0,0.1)]">*/}

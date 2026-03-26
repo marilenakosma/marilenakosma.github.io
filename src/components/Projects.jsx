@@ -6,12 +6,13 @@ import { textVariant } from "../utils/motion";
 import Grainient from './Grainient';
 
 const ProjectCard = ({project}) => {
-  return (<div className=" sm:w-111 w-111 lg:w-111 sm:h-101 lg:h-101 h-101 
+  return (<div className=" sm:w-111 w-111 lg:w-111 sm:h-100 lg:h-101 h-101 
       rounded-lg
     bg-[rgba(255,255,255,0.2)] 
       [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
-      border border-blue-200 grid place-items-baseline 
-      justify-items-center p-2">
+      border border-blue-200 grid 
+      backdrop-blur-xl
+      place-items-center">
    
   {/* <div>
     {
@@ -32,10 +33,11 @@ const ProjectCard = ({project}) => {
       {project.description}
     </p>
     
-    <img src={project.image} 
+      <img src={project.image} 
          className={ project.name === "Serenify(thesis)"
-          ? "w-40 h-50 flex items-end"
-          : "w-90 h-50"} 
+          ? "w-40 h-50 self-end"
+          : "w-90 h-50 self-end"
+        } 
          alt="project image"/>
   </div>)
 

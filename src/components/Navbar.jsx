@@ -13,6 +13,7 @@ export const Navbar = () =>  {
             `${styles.paddingX} w-full flex items-center 
             py-5 fixed top-0 z-20  bg-[rgba(255,255,255,0.2)] 
             [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
+            backdrop-blur-xl
             border border-transparent border-b-blue-200`
         }>
           {/*}  <nav

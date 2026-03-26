@@ -37,6 +37,7 @@ import pada from "./education/pada.jpg";
 import pada2 from "./education/pada2.jpg";
 import udemy from "./education/udemy.png";
 import uxcel from "./education/uxcel.jpeg";
+import scrimba from "./education/scrimba.png"
 
 import openstreetmap from "./openstreetmap.jpg";
 import opentrivia from "./opentrivia.png";
@@ -83,6 +84,7 @@ export {
   pada2,
   udemy,
   uxcel,
+  scrimba,
   openstreetmap,
   opentrivia,
   serenifyFull,
