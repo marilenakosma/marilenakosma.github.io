@@ -80,7 +80,7 @@ export const Navbar = () =>  {
                   <div className={`${ !toggle ? "hidden" : "flex"} 
                    p-8  absolute top-[60px] bg-[rgba(255,255,255,0.2)] 
                    [box-shadow:0_4px_30px_rgba(0,0,0,0.8)]
-                   border border-neutral-400 backdrop-blur-xl
+                   border border-blue-200 backdrop-blur-3xl
                    right-1 mx-4 my-2 min-w-[150px] 
                    z-10 rounded-xl`}
                   >
@@ -96,7 +96,7 @@ export const Navbar = () =>  {
                             ? "text-white decoration-[#F64FFF] underline"
                             : "text-white"
                         }
-                        font-poppins font-medium cursor-pointer
+                        font-medium cursor-pointer
                         text-[16px] [text-shadow:0_4px_30px_rgba(0,0,0,1)]
                         `
                     }

@@ -21,9 +21,9 @@ const styles = {
      "text-white font-semibold md:text-[20px] sm:text-[16px] xs:text-[10px]",
 
   projectsHeadText:
-     "mt-4 text-white  text-center font-semibold md:text-[24px] sm:text-[20px] xs:text-[15px]",
+     "flex justify-start text-white font-semibold md:text-[24px] sm:text-[20px] xs:text-[15px]",
   projectsDescriptionText:
-      "text-white font-light text-center md:text-[18px] sm:text-[14px] text-secondary",
+      "text-white font-light md:text-[18px] sm:text-[14px] text-secondary",
 
 };
 

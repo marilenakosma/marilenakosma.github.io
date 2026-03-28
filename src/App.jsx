@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { BrowserRouter } from 'react-router'
+import { Routes,Route } from 'react-router'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
@@ -54,9 +55,13 @@ const App = () =>  {
 <div>
   {/*<div className="bg-[rgba(0,0,0,0.1)]">*/}
        <Navbar/>
-       <Hero/>
-       <Education/>
+       <Routes>
+        <Route path="/" element={<Hero/>} />
+        <Route path="/education" element={<Education/>} />
+        <Route path="/projects" element={<Projects/>} />
+      </Routes>
       </div>
+      <Education/>
       {/*<About/>*/}
       {/*<Tech/>*/}
       <Projects/>
