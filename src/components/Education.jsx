@@ -13,15 +13,17 @@ import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { textVariant } from "../utils/motion";
 import Grainient from './Grainient';
 
-
+{/*bg-[rgba(255,255,255,0.2)]  */}
 const EducationCard = ({education}) => {
  return (
   
     <div className=" sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
-    bg-[rgba(255,255,255,0.2)] 
+    bg-white/20
       [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
       backdrop-blur-xl
-      border border-blue-200 flex flex-col shrink basis-auto
+      border border-white/50 
+      flex 
+      flex-col 
       items-center p-2">
         <div className="mt-8">
            <img src={education.logo} 

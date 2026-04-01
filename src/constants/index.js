@@ -296,12 +296,12 @@ const projects = [
       },
       {
         logo: python,
-        name: "PyQt",
+        name: "PyQt6",
         //color: "green-text-gradient",
       },
       {
         logo: sqlite,
-        name: "sqlite",
+        name: "SQlite",
         //color: "pink-text-gradient",
       },
       {
@@ -329,7 +329,7 @@ const projects = [
       },
       {
         logo: vue,
-        name: "vue",
+        name: "Vue",
         //color: "pink-text-gradient",
       },
     ],

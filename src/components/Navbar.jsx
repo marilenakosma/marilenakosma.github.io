@@ -11,10 +11,10 @@ export const Navbar = () =>  {
         <nav
         className={
             `${styles.paddingX} w-full flex items-center 
-            py-5 fixed top-0 z-20  bg-[rgba(255,255,255,0.2)] 
+            py-5 fixed top-0 z-20  bg-white/20
             [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
             backdrop-blur-xl
-            border border-transparent border-b-blue-200`
+            border border-transparent border-b-white/50`
         }>
           {/*}  <nav
         className={
@@ -78,10 +78,10 @@ export const Navbar = () =>  {
                  onClick={() => setToggle(!toggle)} />
 
                   <div className={`${ !toggle ? "hidden" : "flex"} 
-                   p-8  absolute top-[60px] bg-[rgba(255,255,255,0.2)] 
+                   p-8  absolute top-[60px] bg-[rgba(0,0,0,0.4)]
                    [box-shadow:0_4px_30px_rgba(0,0,0,0.8)]
-                   border border-blue-200 backdrop-blur-3xl
-                   right-1 mx-4 my-2 min-w-[150px] 
+                   border border-white/50 backdrop-blur-xl
+                   right-1 mx-4 my-4 min-w-[150px] 
                    z-10 rounded-xl`}
                   >
 

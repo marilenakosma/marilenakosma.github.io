@@ -17,6 +17,8 @@ export const Hero = () => {
            speed={1.0}
        />*/}
 
+  
+
 {/*bg-[rgba(0,0,0,0.3)] */}
       <div
         className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX}
@@ -32,10 +34,18 @@ export const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white text-shadow-lg`}>
             Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena</span>,
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 text-shadow-lg`}>
+          <p className={`${styles.heroSubText} mt-2 text-balance text-white-100 text-shadow-lg`}>
             a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br></br> UI/UX. I work mainly with React and <br></br>
             React Native, and strive to learn about <br></br> how design decisions affect real users.
           </p>
+          <div className='flex flex-row gap-8 justify-center'>
+            <button className={`${styles.resumeButtonStyles} mt-8`}>
+             Resume 
+          </button>
+          <button className={`${styles.projectButtonStyles} mt-8`}>
+             Projects
+          </button>
+          </div>
         </div>
       </div>
 
