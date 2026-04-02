@@ -16,6 +16,20 @@ import Grainient from './Grainient';
 {/*bg-[rgba(255,255,255,0.2)]  */}
 const EducationCard = ({education}) => {
  return (
+
+ /*
+  flex 
+  flex-col 
+  flex: 1 0 auto      
+  min-w-[200px]      
+  max-w-[280px]      
+  min-h-[320px]      
+  rounded-lg 
+  bg-white/20 
+  backdrop-blur-xl 
+  border border-white/50 
+  p-2
+*/
   
     <div className=" sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
     bg-white/20
@@ -24,6 +38,7 @@ const EducationCard = ({education}) => {
       border border-white/50 
       flex 
       flex-col 
+      flex: 1 0 auto
       items-center p-2">
         <div className="mt-8">
            <img src={education.logo} 
@@ -56,9 +71,20 @@ export const Education = () =>  {
                 </p>
                </div>
 
-                <div className="flex flex-wrap flex-row
-                  justify-center items-stretch gap-4 xs:gap-3 md:gap-4 lg:gap-15 xl:gap-18 
-                  2xl:gap-22 p-2">
+               {/*<div className="
+  flex 
+  flex-wrap 
+  justify-center 
+  items-stretch 
+  gap-4 xs:gap-3 md:gap-4 lg:gap-15 xl:gap-18 2xl:gap-22 
+  p-2 
+  w-full 
+  max-w-7xl 
+  mx-auto
+"> */}
+
+                <div className="flex flex-wrap
+                  justify-center items-stretch gap-8 w-full max-w-7xl mx-auto p-2">
                   {
                     education.map((edu,index) => (
                       <EducationCard

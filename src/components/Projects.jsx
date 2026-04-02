@@ -4,6 +4,8 @@ import { projects } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { textVariant } from "../utils/motion";
 import Grainient from './Grainient';
+import StickerPeel from './StickerPeel'
+import { docker } from "../assets/index.js";
 
 const ProjectCard = ({index,name,description,tags,image,source_code_link}) => {
   {/* flex 
@@ -107,8 +109,6 @@ export const Projects = () => {
           ))
         }
       </div>
-
-      <div className="mb-30"/>
 
     </>
   )

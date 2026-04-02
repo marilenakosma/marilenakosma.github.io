@@ -72,7 +72,7 @@ const services = [
     icon: creator,
   },
 ];
-
+*/
 const technologies = [
   {
     name: "HTML 5",
@@ -111,7 +111,7 @@ const technologies = [
     icon: docker,
   },
 ];
-*/
+
 
 const education = [
   {
@@ -138,12 +138,12 @@ const education = [
     description: "React.js",
     date: "2025"
   },
-  {
+  /*{
     logo: uxcel,
     name: "Uxcel",
     description: "UI/UX Design",
     date: "2026"
-  },
+  }, */
 
 ]
 
@@ -239,22 +239,18 @@ const projects = [
       {
         logo: rn2,
         name: "React Native",
-        //color: "blue-text-gradient",
       },
       {
         logo: firebase,
         name: "Firebase",
-        //color: "green-text-gradient",
       },
       {
         logo: mmkv,
         name: "MMKV",
-        //color: "pink-text-gradient",
       },
       {
         logo: zustand,
         name: "Zustand",
-        //color: "pink-text-gradient",
       },
     ],
     image: serenifySmall,
@@ -268,17 +264,14 @@ const projects = [
       {
         logo: java,
         name: "Java Swing",
-        //color: "blue-text-gradient",
       },
       {
         logo: openstreetmap,
         name: "Open Street Map",
-        //color: "green-text-gradient",
       },
       {
         logo: java,
         name: "Flatlaf",
-        //color: "pink-text-gradient",
       },
     ],
     image:  touristguideSmall,
@@ -292,17 +285,14 @@ const projects = [
       {
         logo: python,
         name: "Python",
-        //color: "blue-text-gradient",
       },
       {
         logo: python,
         name: "PyQt6",
-        //color: "green-text-gradient",
       },
       {
         logo: sqlite,
         name: "SQlite",
-        //color: "pink-text-gradient",
       },
       {
         logo: opentrivia,
@@ -320,17 +310,14 @@ const projects = [
       {
         logo: net,
         name: "ASP.NET(C#)",
-        //color: "blue-text-gradient",
       },
       {
         logo: postgresql,
         name: "PostgreSQL",
-        //color: "green-text-gradient",
       },
       {
         logo: vue,
         name: "Vue",
-        //color: "pink-text-gradient",
       },
     ],
     image: recipeFull,
@@ -338,4 +325,4 @@ const projects = [
   },
 ];
 
-export { education, projects };
+export { education, technologies,projects };

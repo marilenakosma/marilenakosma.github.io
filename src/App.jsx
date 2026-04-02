@@ -10,6 +10,7 @@ import { Education } from './components/Education'
 import { Tech } from './components/Tech'
 import { Projects } from './components/Projects'
 import { Contact } from './components/Contact'
+import { Skills } from './components/Skills'
 import Grainient from './components/Grainient';
 import Pattern from './components/Pattern';
 import Iridescence from './components/Iridescence'
@@ -62,6 +63,7 @@ const App = () =>  {
       </Routes>
       </div>
       <Education/>
+      <Skills/>
       {/*<About/>*/}
       {/*<Tech/>*/}
       <Projects/>

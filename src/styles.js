@@ -21,9 +21,9 @@ const styles = {
   "rounded-xl px-6 py-3 font-medium  inset-shadow-current/20 backdrop-blur-sm bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
 
   educationHeadText:
-     "text-white text-center font-semibold md:text-[20px] sm:text-[16px] xs:text-[10px] flex-1",
+     "text-white text-center font-semibold md:text-[20px] sm:text-[18px] xs:text-[10px] flex-1",
   educationDescriptionText:
-      "text-white text-balance font-light m-2  md:text-[18px] sm:text-[14px] text-secondary tracking-wider flex-1",
+      "text-white text-balance font-light m-2  md:text-[18px] sm:text-[16px] text-secondary tracking-wider flex-1",
   educationDateText:
      "text-white font-semibold md:text-[20px] sm:text-[16px] xs:text-[10px]",
 
