@@ -100,4 +100,4 @@ export const Education = () =>  {
         )
 }
 
-export default Education;
+export default SectionWrapper(Education,"education");

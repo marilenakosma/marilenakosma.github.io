@@ -114,4 +114,4 @@ export const Projects = () => {
   )
 }
 
-export default Projects;
+export default SectionWrapper(Projects,"Projects");

@@ -7,6 +7,12 @@ import { logo,menu,close } from '../assets';
 export const Navbar = () =>  {
     const [active,setActive] = useState("");
     const [toggle,setToggle] = useState(false);
+
+    const handleNavClick = (id) => {
+        setActive(id);
+        const element = document.getElementById(id);
+        element?.scroillIntoView({ behavior:'smooth' })
+    }
     return (
         <nav
         className={
@@ -53,13 +59,14 @@ export const Navbar = () =>  {
                     className={
                         `${
                             active === link.title
-                            ? "text-white"
+                            ? "text-white decoration-[#F64FFF] underline"
                             : "text-secondary"
                         }
-                        hover:text-white text-[18px]
+                        hover:text-white hover:decoration-[#F64FFF] hover:underline text-[18px]
                         font-medium cursor-pointer`
                     }
                     onClick={() => setActive(link.title)}
+                    //onClick={() => handleNavClick(link.id)}
                     >
                         <a href={`#${link.id}`}>
                          {link.title}
@@ -94,7 +101,7 @@ export const Navbar = () =>  {
                         `${
                             active === link.title
                             ? "text-white decoration-[#F64FFF] underline"
-                            : "text-white"
+                            : "text-secondary"
                         }
                         font-medium cursor-pointer
                         text-[16px] [text-shadow:0_4px_30px_rgba(0,0,0,1)]

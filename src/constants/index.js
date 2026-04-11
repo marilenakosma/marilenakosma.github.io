@@ -77,38 +77,47 @@ const technologies = [
   {
     name: "HTML 5",
     icon: html,
+    initialPosition: { x: -300, y: 0 }
   },
   {
     name: "CSS 3",
     icon: css,
+    initialPosition: { x: 100, y: -100 }
   },
   {
     name: "JavaScript",
     icon: javascript,
+    initialPosition: { x: 200, y: 0 }
   },
   {
     name: "TypeScript",
     icon: typescript,
+    initialPosition: { x: 300, y: -100 }
   },
   {
     name: "React JS",
     icon: reactjs,
+    initialPosition: { x: 400, y: 0 }
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
+    initialPosition: { x: 500, y: -100 }
   },
   {
     name: "git",
     icon: github,
+    initialPosition: { x: 600, y: 0 }
   },
   {
     name: "figma",
     icon: figma,
+    initialPosition: { x: 700, y: -100 }
   },
   {
     name: "docker",
     icon: docker,
+    initialPosition: { x: 800, y: 0 }
   },
 ];
 

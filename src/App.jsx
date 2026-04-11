@@ -46,7 +46,7 @@ const App = () =>  {
   />*/}
        <Iridescence
            //color={[1, 1, 1]}
-           color={[0.4,0.3,0.7]}
+           color={[0.3,0.4,0.7]} //color={[0.4,0.3,0.7]}
            mouseReact={false}
            amplitude={0.1}
            speed={1.0}
@@ -56,19 +56,22 @@ const App = () =>  {
 <div>
   {/*<div className="bg-[rgba(0,0,0,0.1)]">*/}
        <Navbar/>
-       <Routes>
-        <Route path="/" element={<Hero/>} />
-        <Route path="/education" element={<Education/>} />
-        <Route path="/projects" element={<Projects/>} />
-      </Routes>
+       <Hero/>
       </div>
-      <Education/>
+      <section id="education">
+        <Education/>
+      </section>
       <Skills/>
       {/*<About/>*/}
       {/*<Tech/>*/}
-      <Projects/>
+      <section id="projects">
+        <Projects/>
+      </section>
       <div className="relative z-0">
-       {/* <Contact/>*/}
+       {/*
+       <section id="contact">
+        <Contact/>
+        </section>*/}
         
       </div>
     </BrowserRouter>  

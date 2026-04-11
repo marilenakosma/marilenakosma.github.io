@@ -10,14 +10,19 @@ import { postgresql } from "../assets/index.js";
 export const  Skills = () => {
   return (
     <>
-    <div className="mb-8">
+    <div className="mb-10">
           <p className={styles.sectionHeadText}>
-            Tech
+            Technologies
+          </p>
+          <p className={`${styles.sectionSubText}, text-center`}>
+            Made it this far? Here's a sticker!
           </p>
         </div>
 
+<div className="m-30">
 
-<div className="mb-8">
+</div>
+<div className="flex flex-row items-center flex-wrap mb-30">
     {
           technologies.map((tech) => (
                 <StickerPeel
@@ -28,7 +33,7 @@ export const  Skills = () => {
                   peelBackActivePct={40}
                   shadowIntensity={0.5}
                   lightingIntensity={0.2}
-                  initialPosition={{ x: 0, y: 0 }}
+                  initialPosition={tech.initialPosition}
                   peelDirection={0}
                 />
 
