@@ -68,10 +68,10 @@ const App = () =>  {
         <Projects/>
       </section>
       <div className="relative z-0">
-       {/*
+       
        <section id="contact">
         <Contact/>
-        </section>*/}
+        </section>
         
       </div>
     </BrowserRouter>  
