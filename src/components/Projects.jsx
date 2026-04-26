@@ -2,12 +2,12 @@ import React from "react";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { textVariant } from "../utils/motion";
+
 import Grainient from './Grainient';
 import StickerPeel from './StickerPeel'
-import { docker } from "../assets/index.js";
 
-const ProjectCard = ({index,name,description,tags,image,source_code_link}) => {
+
+const ProjectCard = ({name,description,tags,image}) => {
   {/* flex 
   flex-col 
   h-full 
@@ -97,8 +97,8 @@ export const Projects = () => {
   justify-items-center 
   gap-4 
   p-5 */}
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto
-                  place-items-center items-stretch gap-4 p-5">
+      <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl  mx-auto
+                  place-items-center items-stretch gap-4 lg:gap-7 p-5">
         {
           projects.map((project,index) => (
             <ProjectCard 

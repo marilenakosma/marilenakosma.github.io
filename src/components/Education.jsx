@@ -84,7 +84,7 @@ export const Education = () =>  {
 "> */}
 
                 <div className="flex flex-wrap
-                  justify-center items-stretch gap-8 w-full max-w-7xl mx-auto p-2">
+                  justify-center items-stretch gap-8 w-full max-w-8xl mx-auto p-2">
                   {
                     education.map((edu,index) => (
                       <EducationCard

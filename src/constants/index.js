@@ -1,5 +1,5 @@
 import {
-  mobile,
+  
   backend,
   creator,
   web,
@@ -25,6 +25,7 @@ import {
   sqlite,
   udemy,
   uxcel,
+  regeneration,
   scrimba,
   vue,
   zustand,
@@ -135,7 +136,7 @@ const education = [
     description: "Erasmus+ program",
     date: "2025"
   },
-  {
+ /* {
     logo: udemy,
     name: "Udemy",
     description: "The Complete Full-Stack Web Development",
@@ -147,12 +148,18 @@ const education = [
     description: "React.js",
     date: "2025"
   },
-  /*{
+  {
     logo: uxcel,
     name: "Uxcel",
     description: "UI/UX Design",
     date: "2026"
   }, */
+  {
+    logo: regeneration,
+    name: "Regeneration Academy",
+    description: "Full Stack Development with .NET and Angular",
+    date:"2026",
+  }
 
 ]
 
