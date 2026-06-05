@@ -11,6 +11,7 @@ import { styles } from "../styles";
 import { education } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { textVariant } from "../utils/motion";
+
 import Grainient from './Grainient';
 
 {/*bg-[rgba(255,255,255,0.2)]  */}
@@ -31,15 +32,12 @@ const EducationCard = ({education}) => {
   p-2
 */
   
-    <div className=" sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
-    bg-white/20
-      [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
-      backdrop-blur-xl
+    <div className={`${styles.glassBg} backdrop-blur-xl sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
       border border-white/50 
       flex 
       flex-col 
       flex: 1 0 auto
-      items-center p-2">
+      items-center p-2`}>
         <div className="mt-8">
            <img src={education.logo} 
              className="w-16 h-auto block rounded-full mb-2" 
@@ -57,6 +55,7 @@ const EducationCard = ({education}) => {
       <p className={styles.educationDateText}>
        {education.date}
       </p>
+
    
     </div>
  )
@@ -69,6 +68,7 @@ export const Education = () =>  {
                 <p className={styles.sectionHeadText}>
                   Education
                 </p>
+                
                </div>
 
                {/*<div className="

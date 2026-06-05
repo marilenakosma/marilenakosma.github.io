@@ -16,10 +16,8 @@ export const Navbar = () =>  {
     return (
         <nav
         className={
-            `${styles.paddingX} w-full flex items-center 
-            py-5 fixed top-0 z-20  bg-white/20
-            [box-shadow:0_4px_30px_rgba(0,0,0,0.5)]
-            backdrop-blur-xl
+            `${styles.paddingX} ${styles.glassBg} w-full flex items-center 
+            py-5 fixed top-0 z-20 
             border border-transparent border-b-white/50`
         }>
           {/*}  <nav

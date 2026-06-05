@@ -14,6 +14,7 @@ import { Skills } from './components/Skills'
 import Grainient from './components/Grainient';
 import Pattern from './components/Pattern';
 import Iridescence from './components/Iridescence'
+import Footer from './components/Footer'
 const App = () =>  {
 
   return (
@@ -72,6 +73,8 @@ const App = () =>  {
        <section id="contact">
         <Contact/>
         </section>
+
+        <Footer/>
         
       </div>
     </BrowserRouter>  

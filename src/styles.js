@@ -3,8 +3,11 @@ const styles = {
   paddingY: "sm:py-16 py-6",
   padding: "sm:px-16 px-6 sm:py-16 py-10",
   
+  /* [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] */
+  glassBg:
+   "bg-white/20 bg-[rgba(0,0,0,0.4)] backdrop-blur-xl",
   heroHeadText:
-    "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
+    "font-black text-white lg:text-7xl sm:text-6xl xs:text-5xl text-4xl lg:leading-[98px] mt-2",
   heroSubText:
     "text-[#dfd9ff] font-regular lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px]",
 
