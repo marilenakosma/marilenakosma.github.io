@@ -5,9 +5,21 @@ import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 
 import Grainient from './Grainient';
 import StickerPeel from './StickerPeel'
+import { Tilt } from "react-tilt";
 
+const defaultOptions = {
+  reverse: false,  // reverse the tilt direction
+  max: 35,     // max tilt rotation (degrees)
+  perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000,   // Speed of the enter/exit transition
+  transition: true,   // Set a transition on enter/exit.
+  axis: null,   // What axis should be disabled. Can be X or Y.
+  reset: true,    // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
 
-const ProjectCard = ({name,description,tags,image}) => {
+const ProjectCard = ({ name, description, tags, image }) => {
   {/* flex 
   flex-col 
   h-full 
@@ -15,7 +27,9 @@ const ProjectCard = ({name,description,tags,image}) => {
   max-w-md 
   rounded-lg 
   p-2*/}
-  return (<div className="
+  return (
+
+    <div className="
       w-full
       h-full
       max-w-md
@@ -29,9 +43,9 @@ const ProjectCard = ({name,description,tags,image}) => {
       items-center
       justify-center
       ">
-   
-   <div className="flex flex-wrap gap-3 m-3 items-center">
-    {
+
+      <div className="flex flex-wrap gap-3 m-3 items-center">
+        {
           tags.map((tag) => (
             <div className="flex items-center gap-1.5 rounded-3xl 
             shadow-lg [box-shadow:0_4px_30px_rgba(0,0,0,0.3)]
@@ -46,49 +60,49 @@ const ProjectCard = ({name,description,tags,image}) => {
             transition 
             duration-300
             ">
-             <img src={tag.logo} 
-              className="ml-1 w-4 h-4 rounded-md"
-             />
-            <p
-             key={`${name}-${tag.name}`}
-             className="mr-2 text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-light [&:hover]:font-medium"
-             >
-              {tag.name}
-            </p>
+              <img src={tag.logo}
+                className="ml-1 w-4 h-4 rounded-md"
+              />
+              <p
+                key={`${name}-${tag.name}`}
+                className="mr-2 text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-light [&:hover]:font-medium"
+              >
+                {tag.name}
+              </p>
             </div>
           ))
         }
-   </div> 
+      </div>
 
-    <h1 className={`${styles.projectsHeadText} mb-1`}> 
-      {name}
-    </h1>
+      <h1 className={`${styles.projectsHeadText} mb-1`}>
+        {name}
+      </h1>
 
-    <p className={`${styles.projectsDescriptionText} mb-4`}> 
-      {description}
-    </p>
-    
-    <div className="flex items-end justify-end">
-      <img src={image} 
-         className={name === "Serenify(thesis)"
-          ? "w-40 h-50"
-          : "w-90 h-50"
-        } 
-         alt="project image"/>
-    </div>
-  </div>)
+      <p className={`${styles.projectsDescriptionText} mb-4`}>
+        {description}
+      </p>
+
+      <div className="flex items-end justify-end">
+        <img src={image}
+          className={name === "Serenify(thesis)"
+            ? "w-40 h-50"
+            : "w-90 h-50"
+          }
+          alt="project image" />
+      </div>
+    </div>)
 
 }
 
 export const Projects = () => {
   return (
     <>
-    <div className="mb-8">
-      <p className={styles.sectionHeadText}>
-        Projects
-      </p>
-    </div>
-    {/*grid 
+      <div className="mb-8">
+        <p className={styles.sectionHeadText}>
+          Projects
+        </p>
+      </div>
+      {/*grid 
   grid-cols-1 
   md:grid-cols-2 
   max-w-6xl 
@@ -100,12 +114,12 @@ export const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl  mx-auto
                   place-items-center items-stretch gap-4 lg:gap-7 p-5">
         {
-          projects.map((project,index) => (
-            <ProjectCard 
-             key={`projects-${index}`}
-             index={index}
-             {...project}
-             />
+          projects.map((project, index) => (
+            <ProjectCard
+              key={`projects-${index}`}
+              index={index}
+              {...project}
+            />
           ))
         }
       </div>
@@ -114,4 +128,4 @@ export const Projects = () => {
   )
 }
 
-export default SectionWrapper(Projects,"Projects");
+export default SectionWrapper(Projects, "Projects");

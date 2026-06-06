@@ -11,67 +11,76 @@ import { styles } from "../styles";
 import { education } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { textVariant } from "../utils/motion";
+import Tilt from 'react-parallax-tilt';
 
 import Grainient from './Grainient';
 
-{/*bg-[rgba(255,255,255,0.2)]  */}
-const EducationCard = ({education}) => {
- return (
+{/*bg-[rgba(255,255,255,0.2)]  */ }
+const EducationCard = ({ education }) => {
+  return (
 
- /*
-  flex 
-  flex-col 
-  flex: 1 0 auto      
-  min-w-[200px]      
-  max-w-[280px]      
-  min-h-[320px]      
-  rounded-lg 
-  bg-white/20 
-  backdrop-blur-xl 
-  border border-white/50 
-  p-2
-*/
-  
-    <div className={`${styles.glassBg} backdrop-blur-xl sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
+    /*
+     flex 
+     flex-col 
+     flex: 1 0 auto      
+     min-w-[200px]      
+     max-w-[280px]      
+     min-h-[320px]      
+     rounded-lg 
+     bg-white/20 
+     backdrop-blur-xl 
+     border border-white/50 
+     p-2
+   */
+    <Tilt
+      tiltEnable={true}
+      glareEnable={true}
+      glareMaxOpacity={0.8}
+      glareColor="white"
+      glarePosition="all"
+      glareBorderRadius="22px"
+    >
+      <div className={`${styles.glassBg} backdrop-blur-xl sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
       border border-white/50 
       flex 
       flex-col 
       flex: 1 0 auto
       items-center p-2`}>
         <div className="mt-8">
-           <img src={education.logo} 
-             className="w-16 h-auto block rounded-full mb-2" 
-             alt="education logo"/>
+          <img src={education.logo}
+            className="w-16 h-auto block rounded-full mb-2"
+            alt="education logo" />
         </div>
 
-      <h1 className={styles.educationHeadText}>
-        {education.name}
-      </h1>
+        <h1 className={styles.educationHeadText}>
+          {education.name}
+        </h1>
 
-      <p className={styles.educationDescriptionText}>
-       {education.description}
-      </p>
+        <p className={styles.educationDescriptionText}>
+          {education.description}
+        </p>
 
-      <p className={styles.educationDateText}>
-       {education.date}
-      </p>
+        <p className={styles.educationDateText}>
+          {education.date}
+        </p>
 
-   
-    </div>
- )
+
+      </div>
+    </Tilt>
+  )
 }
 
-export const Education = () =>  {
-    return (
-            <>
-               <div className="mb-8">
-                <p className={styles.sectionHeadText}>
-                  Education
-                </p>
-                
-               </div>
+export const Education = () => {
+  return (
+    <>
+      <div className="mb-8">
+        <p className={styles.sectionHeadText}>
+          Education
+        </p>
 
-               {/*<div className="
+      </div>
+
+      {/*<div className="
   flex 
   flex-wrap 
   justify-center 
@@ -83,21 +92,21 @@ export const Education = () =>  {
   mx-auto
 "> */}
 
-                <div className="flex flex-wrap
+      <div className="flex flex-wrap
                   justify-center items-stretch gap-8 w-full max-w-8xl mx-auto p-2">
-                  {
-                    education.map((edu,index) => (
-                      <EducationCard
-                       key={`education-${index}`}
-                       education={edu}/>
-                    ))
-                  }
-                </div>
+        {
+          education.map((edu, index) => (
+            <EducationCard
+              key={`education-${index}`}
+              education={edu} />
+          ))
+        }
+      </div>
 
-                <div className="mb-30"/>
+      <div className="mb-30" />
 
-            </>
-        )
+    </>
+  )
 }
 
-export default SectionWrapper(Education,"education");
+export default SectionWrapper(Education, "education");
