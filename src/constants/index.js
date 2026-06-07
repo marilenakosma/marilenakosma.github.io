@@ -1,5 +1,5 @@
 import {
-  
+
   backend,
   creator,
   web,
@@ -136,29 +136,29 @@ const education = [
     description: "Erasmus+ program",
     date: "2025"
   },
- /* {
-    logo: udemy,
-    name: "Udemy",
-    description: "The Complete Full-Stack Web Development",
-    date: "2025"
-  },
-  {
-    logo: scrimba,
-    name: "Scrimba",
-    description: "React.js",
-    date: "2025"
-  },
-  {
-    logo: uxcel,
-    name: "Uxcel",
-    description: "UI/UX Design",
-    date: "2026"
-  }, */
+  /* {
+     logo: udemy,
+     name: "Udemy",
+     description: "The Complete Full-Stack Web Development",
+     date: "2025"
+   },
+   {
+     logo: scrimba,
+     name: "Scrimba",
+     description: "React.js",
+     date: "2025"
+   },
+   {
+     logo: uxcel,
+     name: "Uxcel",
+     description: "UI/UX Design",
+     date: "2026"
+   }, */
   {
     logo: regeneration,
     name: "Regeneration Academy",
     description: "Full Stack Development with .NET and Angular",
-    date:"2026",
+    date: "2026",
   }
 
 ]
@@ -290,7 +290,7 @@ const projects = [
         name: "Flatlaf",
       },
     ],
-    image:  touristguideSmall,
+    image: touristguideSmall,
     source_code_link: "https://github.com/marilenakosma/TouristGuide/blob/main/README.md",
   },
   {
@@ -312,7 +312,7 @@ const projects = [
       },
       {
         logo: opentrivia,
-        name:"Open Trivia DB"
+        name: "Open Trivia DB"
       }
     ],
     image: quizgameFull,
@@ -341,4 +341,4 @@ const projects = [
   },
 ];
 
-export { education, technologies,projects };
+export { education, technologies, projects };

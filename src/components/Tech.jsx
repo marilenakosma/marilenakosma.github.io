@@ -3,7 +3,7 @@ import { styles } from "../styles.js";
 import { projects, technologies } from "../constants/index.js";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { textVariant } from "../utils/motion.js";
-import Grainient from './Grainient.jsx';
+import Grainient from './backgrounds/Grainient.jsx';
 import StickerPeel from './StickerPeel.jsx'
 import { postgresql } from "../assets/index.js";
 

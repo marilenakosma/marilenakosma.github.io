@@ -2,22 +2,13 @@ import { motion } from 'motion/react'
 
 import { styles } from '../styles'
 //import { Room } from './canvas/Room'
-import Iridescence from './Iridescence';
+import Iridescence from './backgrounds/Iridescence';
 //import LightPillar from './LightPillar';
-import Grainient from './Grainient';
+import Grainient from './backgrounds/Grainient';
 
 export const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-      {/*<Iridescence
-           //color={[1, 1, 1]}
-           color={[0.4,0.3,0.7]}
-           mouseReact={false}
-           amplitude={0.1}
-           speed={1.0}
-       />*/}
-
-
 
       {/*bg-[rgba(0,0,0,0.3)] */}
       <div
