@@ -1,24 +1,19 @@
-import React from "react";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import { motion } from "framer-motion";
+import { useState } from "react";
+import { motion } from "motion/react"
 
 import "react-vertical-timeline-component/style.min.css";
 
 import { styles } from "../styles";
 import { education } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from 'react-parallax-tilt';
 
-import Grainient from './Grainient';
-
 {/*bg-[rgba(255,255,255,0.2)]  */ }
-const EducationCard = ({ education }) => {
-  return (
 
+const EducationCard = ({ index, education }) => {
+  const [scale, setScale] = useState(1.15);
+  return (
     /*
      flex 
      flex-col 
@@ -33,19 +28,25 @@ const EducationCard = ({ education }) => {
      p-2
    */
     <Tilt
-      tiltEnable={true}
+      //tiltEnable={false}
       glareEnable={true}
       glareMaxOpacity={0.8}
-      glareColor="white"
-      glarePosition="all"
-      glareBorderRadius="22px"
+      glareColor="#ffffff"
+      glarePosition="bottom"
+      glareBorderRadius="20px"
+      scale={scale}
+      transitionSpeed={2500}
     >
-      <div className={`${styles.glassBg} backdrop-blur-xl sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className={`${styles.glassBg}  backdrop-blur-xl sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
       border border-white/50 
       flex 
       flex-col 
       flex: 1 0 auto
-      items-center p-2`}>
+      items-center p-2
+      `}
+      >
         <div className="mt-8">
           <img src={education.logo}
             className="w-16 h-auto block rounded-full mb-2"
@@ -65,7 +66,7 @@ const EducationCard = ({ education }) => {
         </p>
 
 
-      </div>
+      </motion.div>
     </Tilt>
   )
 }
@@ -73,12 +74,12 @@ const EducationCard = ({ education }) => {
 export const Education = () => {
   return (
     <>
-      <div className="mb-8">
+      <motion.div className="mb-8" variants={textVariant()}>
         <p className={styles.sectionHeadText}>
           Education
         </p>
 
-      </div>
+      </motion.div>
 
       {/*<div className="
   flex 
@@ -97,8 +98,10 @@ export const Education = () => {
         {
           education.map((edu, index) => (
             <EducationCard
-              key={`education-${index}`}
-              education={edu} />
+              key={edu.name}
+              index={index}
+              education={edu}
+            />
           ))
         }
       </div>

@@ -9,7 +9,7 @@ import Grainient from './Grainient';
 export const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
-        {/*<Iridescence
+      {/*<Iridescence
            //color={[1, 1, 1]}
            color={[0.4,0.3,0.7]}
            mouseReact={false}
@@ -17,18 +17,18 @@ export const Hero = () => {
            speed={1.0}
        />*/}
 
-  
 
-{/*bg-[rgba(0,0,0,0.3)] */}
+
+      {/*bg-[rgba(0,0,0,0.3)] */}
       <div
         className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX}
          flex flex-row items-start gap-5 `}
       >
         <div className='flex flex-col justify-center items-center mt-5 text-shadow-lg'>
-          
+
           {/*<div className='w-5 h-5 rounded-full bg-[#915EFF]' /> 
           <div className='w-1 sm:h-80 h-40 violet-gradient' /> */}
-        </div> 
+        </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white text-shadow-lg`}>
@@ -40,19 +40,19 @@ export const Hero = () => {
           </p>
           <div className='flex flex-row gap-8 justify-center'>
             <button className={`${styles.resumeButtonStyles} mt-8`}>
-             Resume 
-          </button>
-          <button className={`${styles.projectButtonStyles} mt-8`}>
-             Projects
-          </button>
+              Resume
+            </button>
+            <button className={`${styles.projectButtonStyles} mt-8`}>
+              Projects
+            </button>
           </div>
         </div>
       </div>
 
-      
+
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#about'>
+        <a href='#education'>
           <div className='w-[35px] h-16 rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{
@@ -69,7 +69,7 @@ export const Hero = () => {
         </a>
       </div>
     </section>
-    
+
   );
 };
 

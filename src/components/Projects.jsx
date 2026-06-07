@@ -2,9 +2,11 @@ import React from "react";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
+import { motion } from "motion/react"
+import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from 'react-parallax-tilt';
 
-const ProjectCard = ({ name, description, tags, image }) => {
+const ProjectCard = ({ index, project }) => {
   {/* flex 
   flex-col 
   h-full 
@@ -21,12 +23,14 @@ const ProjectCard = ({ name, description, tags, image }) => {
       glarePosition="bottom"
       glareBorderRadius="22px"
     >
-      <div className="
+      <motion.div
+        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+        className="
       w-full
       h-full
       max-w-md
       rounded-lg
-    bg-white/20 
+      bg-white/20 
       border border-white/50
       shadow-lg
       flex
@@ -38,7 +42,7 @@ const ProjectCard = ({ name, description, tags, image }) => {
 
         <div className="flex flex-wrap gap-3 m-3 items-center">
           {
-            tags.map((tag) => (
+            project.tags.map((tag) => (
               <div className="flex items-center gap-1.5 rounded-3xl 
             shadow-lg [box-shadow:0_4px_30px_rgba(0,0,0,0.3)]
             bg-white/40
@@ -56,7 +60,7 @@ const ProjectCard = ({ name, description, tags, image }) => {
                   className="ml-1 w-4 h-4 rounded-md"
                 />
                 <p
-                  key={`${name}-${tag.name}`}
+                  key={`${project.name}-${tag.name}`}
                   className="mr-2 text-black md:text-[16px] sm:text-[14px] xs:text-[14px] font-light [&:hover]:font-medium"
                 >
                   {tag.name}
@@ -67,22 +71,22 @@ const ProjectCard = ({ name, description, tags, image }) => {
         </div>
 
         <h1 className={`${styles.projectsHeadText} mb-1`}>
-          {name}
+          {project.name}
         </h1>
 
         <p className={`${styles.projectsDescriptionText} mb-4`}>
-          {description}
+          {project.description}
         </p>
 
         <div className="flex items-end justify-end">
-          <img src={image}
-            className={name === "Serenify(thesis)"
+          <img src={project.image}
+            className={project.name === "Serenify(thesis)"
               ? "w-40 h-50"
               : "w-90 h-50"
             }
             alt="project image" />
         </div>
-      </div>
+      </motion.div>
     </Tilt>)
 
 }
@@ -90,11 +94,11 @@ const ProjectCard = ({ name, description, tags, image }) => {
 export const Projects = () => {
   return (
     <>
-      <div className="mb-8">
+      <motion.div className="mb-8" variants={textVariant()}>
         <p className={styles.sectionHeadText}>
           Projects
         </p>
-      </div>
+      </motion.div>
       {/*grid 
   grid-cols-1 
   md:grid-cols-2 
@@ -109,9 +113,9 @@ export const Projects = () => {
         {
           projects.map((project, index) => (
             <ProjectCard
-              key={`projects-${index}`}
+              key={project.name}
               index={index}
-              {...project}
+              project={project}
             />
           ))
         }

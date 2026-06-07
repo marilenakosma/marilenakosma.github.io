@@ -26,6 +26,7 @@ export const Tech = () => {
         {
           technologies.map((tech) => (
             <StickerPeel
+              key={tech.name}
               imageSrc={tech.icon}
               width={100}
               rotate={0}
