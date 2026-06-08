@@ -8,8 +8,8 @@ import { Hero } from './components/Hero'
 //import { About } from './components/About'
 import Education from './components/Education'
 import Projects from './components/Projects'
-import { Contact } from './components/Contact'
-import { Tech } from './components/Tech'
+import Contact from './components/Contact'
+import Tech from './components/Tech'
 import Grainient from './components/backgrounds/Grainient';
 import Pattern from './components/Pattern';
 import Iridescence from './components/backgrounds/Iridescence'
@@ -58,24 +58,11 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <section id="education">
-          <Education />
-        </section>
+        <Education />
         <Tech />
-        {/*<About/>*/}
-        {/*<Tech/>*/}
-        <section id="projects">
-          <Projects />
-        </section>
-        <div className="relative z-0">
-
-          <section id="contact">
-            <Contact />
-          </section>
-
-          <Footer />
-
-        </div>
+        <Projects />
+        <Contact />
+        <Footer />
       </BrowserRouter>
     </>
   )

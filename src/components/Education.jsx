@@ -1,8 +1,5 @@
 import { useState } from "react";
 import { motion } from "motion/react"
-
-import "react-vertical-timeline-component/style.min.css";
-
 import { styles } from "../styles";
 import { education } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
@@ -35,7 +32,7 @@ const EducationCard = ({ index, education }) => {
       glarePosition="bottom"
       glareBorderRadius="20px"
       scale={scale}
-      transitionSpeed={2500}
+      transitionSpeed={1500}
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}

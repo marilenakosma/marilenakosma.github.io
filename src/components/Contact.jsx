@@ -59,4 +59,4 @@ export const Contact = () => {
     </>);
 }
 
-export default Contact
+export default SectionWrapper(Contact, "contact")

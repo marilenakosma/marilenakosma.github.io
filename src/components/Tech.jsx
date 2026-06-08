@@ -1,23 +1,22 @@
 import React from "react";
+import { motion } from "motion/react"
 import { styles } from "../styles.js";
 import { projects, technologies } from "../constants/index.js";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { textVariant } from "../utils/motion.js";
-import Grainient from './backgrounds/Grainient.jsx';
+import { fadeIn, textVariant } from "../utils/motion";
 import StickerPeel from './StickerPeel.jsx'
-import { postgresql } from "../assets/index.js";
 
 export const Tech = () => {
   return (
     <>
-      <div className="mb-10">
+      <motion.div className="mb-10" variants={textVariant()}>
         <p className={styles.sectionHeadText}>
           Technologies
         </p>
         <p className={`${styles.sectionSubText}, text-center`}>
           Made it this far? Here's a sticker!
         </p>
-      </div>
+      </motion.div>
 
       <div className="m-30">
 
@@ -45,4 +44,4 @@ export const Tech = () => {
   )
 }
 
-export default Tech;
+export default SectionWrapper(Tech, "technologies");
