@@ -15,6 +15,8 @@ import {
   brasov,
   firebase,
   java,
+  javaTech,
+  csharp,
   mmkv,
   net,
   openstreetmap,
@@ -29,6 +31,9 @@ import {
   scrimba,
   vue,
   zustand,
+  angular,
+  rabbitmq,
+  sqlserver,
   pada,
   pada2,
   opentrivia,
@@ -37,6 +42,7 @@ import {
   quizgameFull,
   touristguideSmall,
   recipeFull,
+  doctor
 } from "../assets";
 
 export const navLinks = [
@@ -92,12 +98,32 @@ const technologies = [
     icon: typescript
   },
   {
+    name: "Vue JS",
+    icon: vue
+  },
+  {
     name: "React JS",
     icon: reactjs
   },
   {
+    name: "Angular JS",
+    icon: angular
+  },
+  {
     name: "Tailwind CSS",
     icon: tailwind
+  },
+  {
+    name: "Python",
+    icon: python
+  },
+  {
+    name: "Java",
+    icon: javaTech
+  },
+  {
+    name: "C#",
+    icon: csharp
   },
   {
     name: "git",
@@ -264,6 +290,35 @@ const projects = [
     source_code_link: "https://github.com/marilenakosma/Serenify",
   },
   {
+    name: "DoctorEverywhere",
+    description:
+      "A location-aware doctor appointment booking system,created with fellow Regeneneration colleagues.",
+    tags: [
+      {
+        logo: csharp,
+        name: "ASP.NET(C#)",
+      },
+      {
+        logo: sqlserver,
+        name: "SQL Server",
+      },
+      {
+        logo: angular,
+        name: "Angular",
+      },
+      {
+        logo: docker,
+        name: "Docker",
+      },
+      {
+        logo: rabbitmq,
+        name: "RabbitMQ",
+      },
+    ],
+    image: doctor,
+    source_code_link: "https://github.com/marilenakosma/Serenify",
+  },
+  {
     name: "Tourist Guide",
     description:
       "A desktop application that simulates transportation between major Romanian cities.",
@@ -309,27 +364,28 @@ const projects = [
     image: quizgameFull,
     source_code_link: "https://github.com/marilenakosma/QuizGame",
   },
-  {
-    name: "Recipe Suggestions",
-    description:
-      "A website that suggests recipes based on ingredients,created with fellow university colleagues.",
-    tags: [
-      {
-        logo: net,
-        name: "ASP.NET(C#)",
-      },
-      {
-        logo: postgresql,
-        name: "PostgreSQL",
-      },
-      {
-        logo: vue,
-        name: "Vue",
-      },
-    ],
-    image: recipeFull,
-    source_code_link: "https://github.com/marilenakosma/RecipeSuggestionsProject",
-  },
+  /* {
+     name: "Recipe Suggestions",
+     description:
+       "A website that suggests recipes based on ingredients,created with fellow university colleagues.",
+     tags: [
+       {
+         logo: csharp,
+         name: "ASP.NET(C#)",
+       },
+       {
+         logo: postgresql,
+         name: "PostgreSQL",
+       },
+       {
+         logo: vue,
+         name: "Vue",
+       },
+     ],
+     image: recipeFull,
+     source_code_link: "https://github.com/marilenakosma/RecipeSuggestionsProject",
+   },
+   */
 ];
 
 export { education, technologies, projects };

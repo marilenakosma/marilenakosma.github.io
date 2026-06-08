@@ -1,7 +1,6 @@
 import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
-import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -22,6 +21,8 @@ import threejs from "./tech/threejs.svg";
 
 import firebase from "./tech/firebase.png";
 import java from "./tech/java.png";
+import javaTech from "./tech/javaTech.png";
+import csharp from './tech/csharp.png'
 import mmkv from "./tech/mmkv.jpg";
 import net from "./tech/net.jpg";
 import postgresql from "./tech/postgresql.png";
@@ -31,6 +32,9 @@ import rn2 from "./tech/rn2.png";
 import sqlite from "./tech/sqlite.jpg";
 import vue from "./tech/vue.png";
 import zustand from "./tech/zustand.png";
+import angular from './tech/angular.png'
+import rabbitmq from './tech/rabbitmq.png'
+import sqlserver from './tech/sqlserver.png'
 
 import brasov from "./education/brasov.png";
 import pada from "./education/pada.jpg";
@@ -47,12 +51,12 @@ import serenifySmall from "./serenifySmall.png";
 import quizgameFull from "./quizgameFull.png";
 import touristguideSmall from "./touristguideSmall.png";
 import recipeFull from "./recipeFull.png";
+import doctor from './DoctorEverywhere.png'
 
 export {
   logo,
   backend,
   creator,
-  mobile,
   web,
   github,
   menu,
@@ -71,6 +75,8 @@ export {
   threejs,
   firebase,
   java,
+  javaTech,
+  csharp,
   mmkv,
   net,
   postgresql,
@@ -80,6 +86,9 @@ export {
   sqlite,
   vue,
   zustand,
+  angular,
+  rabbitmq,
+  sqlserver,
   brasov,
   pada,
   pada2,
@@ -94,4 +103,5 @@ export {
   quizgameFull,
   touristguideSmall,
   recipeFull,
+  doctor
 };

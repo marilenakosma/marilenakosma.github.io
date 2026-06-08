@@ -13,7 +13,7 @@ export const Tech = () => {
         <p className={styles.sectionHeadText}>
           Technologies
         </p>
-        <p className={`${styles.sectionSubText}, mt-4`}>
+        <p className={`${styles.sectionSubText} text-center mt-4`}>
           Made it this far? Here's a sticker!
         </p>
       </motion.div>
