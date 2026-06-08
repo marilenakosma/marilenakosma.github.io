@@ -15,7 +15,6 @@ const StickerPeel = ({
   width = 200,
   shadowIntensity = 0.6,
   lightingIntensity = 0.1,
-  initialPosition = 'center',
   peelDirection = 0,
   className = ''
 }) => {
@@ -26,25 +25,6 @@ const StickerPeel = ({
   const draggableInstanceRef = useRef(null);
 
   const defaultPadding = 10;
-
-  useEffect(() => {
-    const target = dragTargetRef.current;
-    if (!target) return;
-
-    let startX = 0,
-      startY = 0;
-
-    if (initialPosition === 'center') {
-      return;
-    }
-
-    if (typeof initialPosition === 'object' && initialPosition.x !== undefined && initialPosition.y !== undefined) {
-      startX = initialPosition.x;
-      startY = initialPosition.y;
-    }
-
-    gsap.set(target, { x: startX, y: startY });
-  }, [initialPosition]);
 
   useEffect(() => {
     const target = dragTargetRef.current;

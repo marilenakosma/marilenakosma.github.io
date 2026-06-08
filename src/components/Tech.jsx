@@ -13,7 +13,7 @@ export const Tech = () => {
         <p className={styles.sectionHeadText}>
           Technologies
         </p>
-        <p className={`${styles.sectionSubText}, text-center`}>
+        <p className={`${styles.sectionSubText}, mt-4`}>
           Made it this far? Here's a sticker!
         </p>
       </motion.div>
@@ -21,7 +21,7 @@ export const Tech = () => {
       <div className="m-30">
 
       </div>
-      <div className="flex flex-row items-center flex-wrap mb-30">
+      <div className="flex flex-row items-center justify-center flex-wrap gap-4 mb-10 pb-10">
         {
           technologies.map((tech) => (
             <StickerPeel
@@ -33,7 +33,6 @@ export const Tech = () => {
               peelBackActivePct={40}
               shadowIntensity={0.5}
               lightingIntensity={0.2}
-              initialPosition={tech.initialPosition}
               peelDirection={0}
             />
 
