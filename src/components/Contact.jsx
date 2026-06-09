@@ -44,8 +44,6 @@ export const Contact = () => {
 
             <TextInput name="FirstName" placeholder="John" labelText="first name" required />
             <TextInput name="LastName" placeholder="Doe" labelText="last name" required />
-            { /*<TextInput name="Email" type="email" placeholder="john@mail.com" labelText="email" required />
-          {errorValidation("Email")} */}
             <TextInput name="Subject" placeholder="I want to talk about..." labelText="Subject" required />
 
             <div className="sm:col-span-2">
@@ -59,7 +57,7 @@ export const Contact = () => {
               </button>
             </div>
             {state.succeeded ?
-              <p className="text-center text-white text-lg text-bold">
+              <p role="status" className="text-center text-white text-lg text-bold">
                 Thanks for sending a message! Form will reset shortly...
               </p> :
               null}

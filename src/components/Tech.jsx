@@ -24,17 +24,24 @@ export const Tech = () => {
       <div className="flex flex-row items-center justify-center flex-wrap gap-4 max-w-4xl  mx-auto mb-10 pb-10">
         {
           technologies.map((tech) => (
-            <StickerPeel
-              key={tech.name}
-              imageSrc={tech.icon}
-              width={100}
-              rotate={0}
-              peelBackHoverPct={30}
-              peelBackActivePct={40}
-              shadowIntensity={0.5}
-              lightingIntensity={0.2}
-              peelDirection={0}
-            />
+            <div className="flex flex-col items-center justify-end gap-4">
+              <StickerPeel
+                key={tech.name}
+                aria-label={tech.name}
+                imageSrc={tech.icon}
+                width={100}
+                height={100}
+                rotate={0}
+                peelBackHoverPct={40}
+                peelBackActivePct={40}
+                shadowIntensity={0.5}
+                lightingIntensity={0.2}
+                peelDirection={1}
+              />
+              <p className="text-white">
+                {tech.name}
+              </p>
+            </div>
 
           ))
         }

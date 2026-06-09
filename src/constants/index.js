@@ -122,15 +122,15 @@ const technologies = [
     icon: csharp
   },
   {
-    name: "git",
+    name: "Github",
     icon: github
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma
   },
   {
-    name: "docker",
+    name: "Docker",
     icon: docker
   },
 ];

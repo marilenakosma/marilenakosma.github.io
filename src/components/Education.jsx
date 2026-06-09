@@ -9,7 +9,6 @@ import Tilt from 'react-parallax-tilt';
 {/*bg-[rgba(255,255,255,0.2)]  */ }
 
 const EducationCard = ({ index, education }) => {
-  const [scale, setScale] = useState(1.15);
   return (
     /*
      flex 
@@ -24,15 +23,15 @@ const EducationCard = ({ index, education }) => {
      border border-white/50 
      p-2
    */
+
     <Tilt
-      //tiltEnable={false}
+      tiltEnable={true}
       glareEnable={true}
       glareMaxOpacity={0.8}
       glareColor="#ffffff"
       glarePosition="bottom"
       glareBorderRadius="20px"
-      scale={scale}
-      transitionSpeed={1500}
+      className="[&:hover]:scale-110"
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}

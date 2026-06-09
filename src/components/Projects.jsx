@@ -2,7 +2,7 @@ import React from "react";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { motion } from "motion/react"
+import { motion, useReducedMotion } from "motion/react"
 import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from 'react-parallax-tilt';
 
@@ -14,6 +14,9 @@ const ProjectCard = ({ index, project }) => {
   max-w-md 
   rounded-lg 
   p-2*/}
+
+  const shouldReduceMotion = useReducedMotion()
+
   return (
     <Tilt
       tiltEnable={true}
@@ -58,6 +61,7 @@ const ProjectCard = ({ index, project }) => {
             ">
                 <img src={tag.logo}
                   className="ml-1 w-4 h-4 rounded-md"
+                  alt={tag.name}
                 />
                 <p
                   key={`${project.name}-${tag.name}`}
