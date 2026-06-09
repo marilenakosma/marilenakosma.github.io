@@ -37,6 +37,7 @@ export const Tech = () => {
                 shadowIntensity={0.5}
                 lightingIntensity={0.2}
                 peelDirection={1}
+
               />
               <p className="text-white">
                 {tech.name}

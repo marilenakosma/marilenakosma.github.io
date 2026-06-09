@@ -38,7 +38,8 @@ import {
   quizgameFull,
   touristguideSmall,
   recipeFull,
-  doctor
+  doctor,
+  asyncstorage
 } from "../assets";
 
 export const navLinks = [
@@ -278,11 +279,16 @@ const projects = [
         name: "MMKV",
       },
       {
+        logo: asyncstorage,
+        name: "Async Storage"
+      },
+      {
         logo: zustand,
         name: "Zustand",
       },
     ],
     image: serenifySmall,
+    image_alt: "An image depicting a mental health app with mood selection",
     source_code_link: "https://github.com/marilenakosma/Serenify",
   },
   {
@@ -312,7 +318,8 @@ const projects = [
       },
     ],
     image: doctor,
-    source_code_link: "https://github.com/marilenakosma/Serenify",
+    image_alt: "An image depicting booking doctor appointments in an interactive map",
+    source_code_link: "https://github.com/DoctorEverywhere",
   },
   {
     name: "Tourist Guide",
@@ -333,7 +340,8 @@ const projects = [
       },
     ],
     image: touristguideSmall,
-    source_code_link: "https://github.com/marilenakosma/TouristGuide/blob/main/README.md",
+    image_alt: "An image depicting tourist attraction in an interactive map of Brasov,Romania",
+    source_code_link: "https://github.com/marilenakosma/TouristGuide/",
   },
   {
     name: "Quiz Game",
@@ -358,6 +366,7 @@ const projects = [
       }
     ],
     image: quizgameFull,
+    image_alt: "An image depicting category selection in a quiz game",
     source_code_link: "https://github.com/marilenakosma/QuizGame",
   },
   /* {

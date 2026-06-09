@@ -31,6 +31,7 @@ import zustand from "./tech/zustand.png";
 import angular from './tech/angular.png'
 import rabbitmq from './tech/rabbitmq.png'
 import sqlserver from './tech/sqlserver.png'
+import asyncstorage from './tech/asyncstorage.png'
 
 import brasov from "./education/brasov.png";
 import pada from "./education/pada.jpg";
@@ -98,5 +99,6 @@ export {
   touristguideSmall,
   recipeFull,
   doctor,
-  cv
+  cv,
+  asyncstorage
 };
