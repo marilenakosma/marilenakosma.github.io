@@ -70,9 +70,9 @@ const ProjectCard = ({ index, project }) => {
           }
         </div>
 
-        <h1 className={`${styles.projectsHeadText} mb-1`}>
+        <h3 className={`${styles.projectsHeadText} mb-1`}>
           {project.name}
-        </h1>
+        </h3>
 
         <p className={`${styles.projectsDescriptionText} mb-4`}>
           {project.description}
@@ -95,9 +95,9 @@ export const Projects = () => {
   return (
     <>
       <motion.div className="mb-8" variants={textVariant()}>
-        <p className={styles.sectionHeadText}>
+        <h2 className={styles.sectionHeadText}>
           Projects
-        </p>
+        </h2>
       </motion.div>
       {/*grid 
   grid-cols-1 

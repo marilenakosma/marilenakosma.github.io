@@ -21,7 +21,7 @@ export const Tech = () => {
       <div className="m-30">
 
       </div>
-      <div className="flex flex-row items-center justify-center flex-wrap gap-4 mb-10 pb-10">
+      <div className="flex flex-row items-center justify-center flex-wrap gap-4 max-w-4xl  mx-auto mb-10 pb-10">
         {
           technologies.map((tech) => (
             <StickerPeel
