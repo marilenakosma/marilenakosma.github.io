@@ -1,8 +1,4 @@
-import logo from "./logo.svg";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import web from "./web.png";
-import github from "./github.png";
+import github from "./tech/github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -44,20 +40,18 @@ import uxcel from "./education/uxcel.jpeg";
 import regeneration from "./education/regeneration.jpg";
 import scrimba from "./education/scrimba.png"
 
-import openstreetmap from "./openstreetmap.jpg";
-import opentrivia from "./opentrivia.png";
-import serenifyFull from "./serenifyFull.png";
-import serenifySmall from "./serenifySmall.png";
-import quizgameFull from "./quizgameFull.png";
-import touristguideSmall from "./touristguideSmall.png";
-import recipeFull from "./recipeFull.png";
-import doctor from './DoctorEverywhere.png'
+import openstreetmap from "./tech/openstreetmap.jpg";
+import opentrivia from "./projects/opentrivia.png";
+import serenifyFull from "./projects/serenifyFull.png";
+import serenifySmall from "./projects/serenifySmall.png";
+import quizgameFull from "./projects/quizgameFull.png";
+import touristguideSmall from "./projects/touristguideSmall.png";
+import recipeFull from "./projects/recipeFull.png";
+import doctor from './projects/DoctorEverywhere.png'
+
+import cv from './cv/cv_Maria_Eleni_Kosma.pdf'
 
 export {
-  logo,
-  backend,
-  creator,
-  web,
   github,
   menu,
   close,
@@ -103,5 +97,6 @@ export {
   quizgameFull,
   touristguideSmall,
   recipeFull,
-  doctor
+  doctor,
+  cv
 };

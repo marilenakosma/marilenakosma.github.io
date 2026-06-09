@@ -1,10 +1,7 @@
 import { motion } from 'motion/react'
 
 import { styles } from '../styles'
-//import { Room } from './canvas/Room'
-import Iridescence from './backgrounds/Iridescence';
-//import LightPillar from './LightPillar';
-import Grainient from './backgrounds/Grainient';
+import { cv } from '../assets';
 
 export const Hero = () => {
   return (
@@ -30,11 +27,16 @@ export const Hero = () => {
             React Native, and strive to learn about <br></br> how design decisions affect real users.
           </p>
           <div className='flex flex-row gap-8 justify-center'>
-            <button className={`${styles.resumeButtonStyles} mt-8`}>
-              Resume
+            <button
+              className={`${styles.resumeButtonStyles} mt-8 `}>
+              <a href={cv} download={"cv-Maria-Eleni-Kosma.pdf"}>
+                Resume
+              </a>
             </button>
             <button className={`${styles.projectButtonStyles} mt-8`}>
-              Projects
+              <a href="https://github.com/marilenakosma">
+                Github
+              </a>
             </button>
           </div>
         </div>

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router'
 import { styles } from '../styles';
 import { navLinks } from '../constants/index';
-import { logo, menu, close } from '../assets';
+import { menu, close } from '../assets';
 
 export const Navbar = () => {
     const [active, setActive] = useState("");
@@ -103,7 +103,7 @@ export const Navbar = () => {
 
                 <div className="sm:hidden flex flex-1 
                 justify-end items-center" >
-                    <div class="absolute flex items-center sm:hidden">
+                    <div className="absolute flex items-center sm:hidden">
                         <button
                             ref={toggleBtnRef}
                             id="menubutton"
@@ -120,7 +120,7 @@ export const Navbar = () => {
                             focus:outline-white"
                             onClick={() => setToggle(!toggle)}
                         />
-                        <span class="absolute -inset-0.5"></span>
+                        <span className="absolute -inset-0.5"></span>
                         <span className="sr-only">
                             {toggle ? "Close menu" : "Open menu"}
                         </span>
