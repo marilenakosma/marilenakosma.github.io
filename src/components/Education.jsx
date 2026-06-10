@@ -98,7 +98,8 @@ export const Education = () => {
                   w-full 
                   max-w-10xl 
                   mx-auto 
-                  p-2">
+                  p-2
+                  mb-30">
         {
           education.map((edu, index) => (
             <EducationCard
@@ -109,8 +110,6 @@ export const Education = () => {
           ))
         }
       </div>
-
-      <div className="mb-30" />
 
     </>
   )

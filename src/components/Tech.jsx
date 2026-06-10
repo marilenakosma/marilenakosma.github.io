@@ -13,18 +13,15 @@ export const Tech = () => {
         <p className={styles.sectionHeadText}>
           Technologies
         </p>
-        <p className={`${styles.sectionSubText} text-center mt-4`}>
+        <p className={`${styles.sectionSubText} text-center mt-4 mb-30`}>
           Made it this far? Here's a sticker!
         </p>
       </motion.div>
 
-      <div className="m-30">
-
-      </div>
-      <div className="flex flex-row items-center justify-center flex-wrap gap-4 max-w-4xl  mx-auto mb-10 pb-10">
+      <div className="flex flex-row justify-center flex-wrap gap-4 max-w-4xl  mx-auto mb-10 pb-10">
         {
           technologies.map((tech) => (
-            <div className="flex flex-col items-center justify-end gap-4">
+            <div className="flex flex-col items-center justify-end gap-4 mb-7">
               <StickerPeel
                 key={tech.name}
                 aria-label={tech.name}
