@@ -44,18 +44,15 @@ const ProjectCard = ({ index, project }) => {
         <div className="flex flex-wrap min-h-5 gap-3 m-3 md:mb-7 xl:mb-9 items-center">
           {
             project.tags.map((tag) => (
-              <div className="flex items-center gap-1.5 rounded-3xl 
-            shadow-lg [box-shadow:0_4px_30px_rgba(0,0,0,0.3)]
-            bg-white/40
-            shadow-2xl/20      
-            inset-shadow-md
+              <div className={`${styles.glassProjectTagsBg} flex items-center gap-1.5 
+            rounded-3xl 
             px-2
             font-semibold
             [&:hover]:scale-110 
             [&:hover]:border-white-100 
             transition 
             duration-300
-            ">
+            `}>
                 <img src={tag.logo}
                   className="ml-1 w-4 h-4 rounded-md object-contain"
                   alt={tag.name}
@@ -63,8 +60,7 @@ const ProjectCard = ({ index, project }) => {
 
                 <p
                   key={`${project.name}-${tag.name}`}
-                  className="mr-2 text-black md:text-[16px] 
-                  sm:text-[14px] xs:text-[14px] 
+                  className="mr-2 text-black text-[13px] xs:text-[14px] sm:text-[14px] md:text-[16px] 
                   font-light 
                   [&:hover]:font-medium"
                 >

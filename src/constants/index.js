@@ -264,7 +264,7 @@ const projects = [
   {
     name: "Serenify(thesis)",
     description:
-      "A gamified mental health application featuring various self care activities.",
+      "A mobile self-care helper designed to support users' mental well-being through daily activities.",
     tags: [
       {
         logo: rn2,

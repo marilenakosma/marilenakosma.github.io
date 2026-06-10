@@ -8,8 +8,8 @@ export default function Footer() {
                 <div className="px-4 mx-auto lg:px-8 max-7-xl">
                     <div className="">
                         <div>
-                            <p className="text-white font-bold sm:text-2xl">Marilena Kosma</p>
-                            <p className="text-white">
+                            <p className="text-white font-bold text-[18px] sm:text-2xl">Marilena Kosma</p>
+                            <p className="text-white text-[15px] sm:text-base">
                                 Full-stack Developer
                             </p>
 

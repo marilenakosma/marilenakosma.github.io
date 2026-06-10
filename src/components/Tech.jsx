@@ -36,7 +36,7 @@ export const Tech = () => {
                 peelDirection={1}
 
               />
-              <p className="text-white">
+              <p className="text-white text-[14px] sm:text-[15px]">
                 {tech.name}
               </p>
             </div>
