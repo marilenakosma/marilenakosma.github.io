@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="fixed inset-0 -z-3">
+        <div className="fixed inset-0 -z-3 ">
           {/*<Grainient color1="0080ff" //409fff //0080ff //409fff
            color2="#5227ff"
     color3="#B19EEF"
@@ -43,7 +43,7 @@ const App = () => {
     centerY={0}
     zoom={0.9}
     
-  />*/}
+  /> */}
           <Iridescence
             //color={[1, 1, 1]}
             color={[0.3, 0.4, 0.7]} //color={[0.4,0.3,0.7]}
@@ -54,15 +54,16 @@ const App = () => {
 
         </div>
         <div>
-          {/*<div className="bg-[rgba(0,0,0,0.1)]">*/}
+          {/*<div className="bg-linear-to-r from-cyan-500 to-blue-500">*/}
           <Navbar />
           <Hero />
-        </div>
+        </div >
         <Education />
         <Tech />
         <Projects />
         <Contact />
         <Footer />
+        {/*} </div> */}
       </BrowserRouter>
     </>
   )
