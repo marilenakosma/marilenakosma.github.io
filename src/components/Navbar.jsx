@@ -61,7 +61,7 @@ export const Navbar = () => {
                         window.scrollTo(0, 0)
                     }}
                 >
-                    <p className="text-white text-[18px] 
+                    <p className="text-white text-base lg:text-lg 
                 font-bold cursor-pointer flex">
                         Marilena Kosma
                     </p>
@@ -77,7 +77,7 @@ export const Navbar = () => {
                                     ? "text-white decoration-[#F64FFF] underline"
                                     : "text-secondary"
                                 }
-                        hover:text-white hover:decoration-[#F64FFF] hover:underline text-[18px]
+                        hover:text-white hover:decoration-[#F64FFF] hover:underline text-base lg:text-lg
                         font-medium cursor-pointer`
                             }
                             onClick={() => setActive(link.title)}

@@ -3,13 +3,13 @@ import { styles } from "../styles";
 export default function Footer() {
     return (
         <>
-            <section className={`${styles.glassBg} py-10
-      border border-transparent border-t-white/50  sm:pt-16 lg:pt-20`}>
+            <section className={`${styles.glassBg} py-8 md:py-12 lg:py-16
+      border border-transparent border-t-white/50 `}>
                 <div className="px-4 mx-auto lg:px-8 max-7-xl">
                     <div className="">
                         <div>
-                            <p className="text-white font-bold text-[18px] sm:text-2xl">Marilena Kosma</p>
-                            <p className="text-white text-[15px] sm:text-base">
+                            <p className="text-white font-bold  text-lg md:text-2xl sm:text-2xl">Marilena Kosma</p>
+                            <p className="text-white text-white text-sm md:text-base">
                                 Full-stack Developer
                             </p>
 
