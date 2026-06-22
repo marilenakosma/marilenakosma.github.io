@@ -44,16 +44,30 @@ void main() {
 }
 `;
 
-export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude = 0.1, mouseReact = true, ...rest }) {
+export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude = 0.1, mouseReact = true, onWebGLUnsupported, ...rest }) {
   const ctnDom = useRef(null);
   const mousePos = useRef({ x: 0.5, y: 0.5 });
 
   useEffect(() => {
     if (!ctnDom.current) return;
     const ctn = ctnDom.current;
-    const renderer = new Renderer();
-    const gl = renderer.gl;
-    gl.clearColor(1, 1, 1, 1);
+
+    const testCanvas = document.createElement('canvas');
+    const testCtx = testCanvas.getContext('webgl') || testCanvas.getContext('experimental-webgl');
+    if (!testCtx) {
+      onWebGLUnsupported?.();
+      return;
+    }
+
+    let renderer, gl, animateId;
+    try {
+      renderer = new Renderer();
+      gl = renderer.gl;
+      gl.clearColor(1, 1, 1, 1);
+    } catch {
+      onWebGLUnsupported?.();
+      return;
+    }
 
     let program;
 
@@ -88,7 +102,6 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
     });
 
     const mesh = new Mesh(gl, { geometry, program });
-    let animateId;
 
     function update(t) {
       animateId = requestAnimationFrame(update);
@@ -116,11 +129,13 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
       if (mouseReact) {
         ctn.removeEventListener('mousemove', handleMouseMove);
       }
-      ctn.removeChild(gl.canvas);
+      if (gl?.canvas && ctn.contains(gl.canvas)) {
+        ctn.removeChild(gl.canvas);
+      }
       gl.getExtension('WEBGL_lose_context')?.loseContext();
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [color, speed, amplitude, mouseReact]);
+  }, [color, speed, amplitude, mouseReact, onWebGLUnsupported]);
 
   return <div ref={ctnDom} className="w-full h-full" {...rest} />;
 }

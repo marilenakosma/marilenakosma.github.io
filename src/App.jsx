@@ -15,43 +15,23 @@ import Pattern from './components/Pattern';
 import Iridescence from './components/backgrounds/Iridescence'
 import Footer from './components/Footer'
 const App = () => {
-
+  const [webGlSupported, setWebglSupported] = useState(true)
   return (
     <>
       <BrowserRouter>
-        <div className="fixed inset-0 -z-3 ">
-          {/*<Grainient color1="0080ff" //409fff //0080ff //409fff
-           color2="#5227ff"
-    color3="#B19EEF"
-    timeSpeed={0.25}
-    colorBalance={0}
-    warpStrength={1}
-    warpFrequency={5}
-    warpSpeed={4}
-    warpAmplitude={50}
-    blendAngle={0}
-    blendSoftness={0.05}
-    rotationAmount={500}
-    noiseScale={2}
-    grainAmount={0.1}
-    grainScale={2}
-    grainAnimated={false}
-    contrast={1.5}
-    gamma={1}
-    saturation={1}
-    centerX={0}
-    centerY={0}
-    zoom={0.9}
-    
-  /> */}
-          <Iridescence
-            //color={[1, 1, 1]}
-            color={[0.3, 0.4, 0.7]} //color={[0.4,0.3,0.7]}
-            mouseReact={false}
-            amplitude={0.1}
-            speed={1.0}
-          />
-
+        <div className="fixed inset-0 -z-3">
+          {webGlSupported ? (
+            <Iridescence
+              color={[0.3, 0.4, 0.7]}
+              mouseReact={false}
+              amplitude={0.1}
+              speed={1.0}
+              onWebGLUnsupported={() => setWebglSupported(false)}
+            />
+          ) : (
+            // CSS-only fallback 
+            <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
+          )}
         </div>
         <div>
           {/*<div className="bg-linear-to-r from-cyan-500 to-blue-500">*/}

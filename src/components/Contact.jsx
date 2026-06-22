@@ -34,10 +34,10 @@ export const Contact = () => {
   return (
     <>
 
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-3xl">
+      <div className="py-8 lg:py-12 px-4 md:px-8 mx-auto max-w-3xl">
         <form className="space-y-8" ref={formRef} onSubmit={handleSubmit}>
           <fieldset >
-            <legend className={`${styles.sectionHeadText} mb-5 mt-10 `}>Contact Us</legend>
+            <legend className={`${styles.sectionHeadText} mb-4 md:mb-6 mt-6 md:mt-10`}>Contact Me</legend>
             <h2 className={`${styles.sectionSubText} text-center mb-5`}>
               Interested in working with me? You can send a message
             </h2>

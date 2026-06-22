@@ -25,11 +25,11 @@ const styles = {
     "mb-8 text-secondary text-base md:text-lg lg:text-xl",
 
   resumeButtonStyles:
-    "rounded-xl px-6 py-3 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   resumeButtonStylesAlt:
     "rounded-3xl border border-(--glass-border) px-6 py-3 font-semibold shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-(--glass-bg) inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   projectButtonStyles:
-    "rounded-xl px-6 py-3 font-medium  inset-shadow-current/20 backdrop-blur-sm bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-xl px-4 py-2 md:px-6 md:py-3md:py-2 font-medium  inset-shadow-current/20 backdrop-blur-sm bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
 
   educationHeadText:
     "text-white text-center font-semibold text-base sm:text-lg md:text-xl flex-1",
