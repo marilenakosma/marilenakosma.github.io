@@ -41,7 +41,7 @@ const ProjectCard = ({ index, project }) => {
         justify-center
       `}>
 
-        <div className="flex flex-wrap min-h-5 gap-3 m-3 md:mb-7 xl:mb-9 items-center">
+        <div className="flex flex-wrap min-h-5 gap-3 m-3 m-3 md:m-4 items-center">
           {
             project.tags.map((tag) => (
               <div className={`${styles.glassProjectTagsBg} flex items-center gap-1.5 
@@ -72,7 +72,7 @@ const ProjectCard = ({ index, project }) => {
         </div>
 
         <div className="flex flex-row items-center justify-center gap-4">
-          <h3 className={`${styles.projectsHeadText} mb-1`}>
+          <h3 className={`${styles.projectsHeadText} mb-3`}>
             {project.name}
           </h3>
 
@@ -90,7 +90,7 @@ const ProjectCard = ({ index, project }) => {
         </div>
 
 
-        <p className={`${styles.projectsDescriptionText} mb-8 md:mb-7 xl:mb-9`}>
+        <p className={`${styles.projectsDescriptionText} mb-4 md:mb-6 lg:mb-8`}>
           {project.description}
         </p>
 

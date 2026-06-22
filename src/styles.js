@@ -34,9 +34,9 @@ const styles = {
   educationHeadText:
     "text-white text-center font-semibold text-base sm:text-lg md:text-xl flex-1",
   educationDescriptionText:
-    "text-white text-balance font-light m-2 text-[15px] md:leading-relaxed sm:text-base md:text-lg text-secondary tracking-wider flex-1",
+    "text-white text-balance font-light m-2 text-[15px] leading-relaxed sm:text-base md:text-lg text-secondary tracking-wider flex-1",
   educationDateText:
-    "text-white font-semibold text-sm sm:text-base md:text-lg",
+    "text-white font-semibold text-sm sm:text-base md:text-lg mt-2",
 
   educationContainerAlt:
     "sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg bg-white [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] border border-blue-200 flex flex-col shrink basis-auto items-center p-2",
@@ -50,9 +50,9 @@ const styles = {
   projectTags:
     "flex items-center gap-1.5 rounded-3xl shadow-lg [box-shadow:0_4px_30px_rgba(0,0,0,0.3)] bg-white/40 shadow-2xl/20 inset-shadow-md px-2 font-semibold cursor-pointer [&:hover]:scale-110 [&:hover]:border-white-100 transition duration-300",
   projectsHeadText:
-    "text-white font-semibold  text-lg sm:text-xl md:text-2xl",
+    "text-white font-semibold text-lg sm:text-xl md:text-2xl mt-3",
   projectsDescriptionText:
-    "text-white text-center text-balance font-light text-[15px] sm:text-base md:text-lg text-secondary",
+    "text-white text-center text-balance p-1 lg:pl-5 lg:pr-5 font-light text-[15px] sm:text-base md:text-lg text-secondary",
 
 };
 

@@ -35,17 +35,19 @@ const EducationCard = ({ index, education }) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className={`${styles.glassBg}  backdrop-blur-xl sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg
-      border border-white/50 
-      flex 
-      flex-col 
-      flex: 1 0 auto
-      items-center p-2
+        className={`${styles.glassBg}  backdrop-blur-xl w-60 h-89 rounded-lg
+         border border-white/50 
+         flex 
+         flex-col 
+         flex: 1 0 auto
+         items-center  
+         p-2 
+         md:p-4
       `}
       >
-        <div className="mt-8">
+        <div className="mt-4 md:mt-8">
           <img src={education.logo}
-            className="w-16 h-auto block rounded-full mb-2"
+            className="w-16 h-auto block rounded-full mb-4"
             alt="education logo" />
         </div>
 
@@ -93,13 +95,16 @@ export const Education = () => {
                   flex-wrap
                   justify-center 
                   items-stretch 
-                  gap-8
-                  xl:gap-10 
+                  gap-6 
+                  md:gap-8 
+                  xl:gap-10               
                   w-full 
                   max-w-10xl 
                   mx-auto 
                   p-2
-                  mb-30">
+                  mb-16 
+                  md:mb-24 
+                  lg:mb-30">
         {
           education.map((edu, index) => (
             <EducationCard

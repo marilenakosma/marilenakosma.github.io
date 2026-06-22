@@ -141,13 +141,13 @@ const education = [
   {
     logo: pada,
     name: "University of West Attica",
-    description: "Computer Science and Engineering",
+    description: "Informatics and Computer Engineering",
     date: "2020 - 2026"
   },
   {
     logo: brasov,
-    name: "University of Brasov",
-    description: "Erasmus+ program",
+    name: "University of Brasov(Erasmus+)",
+    description: "Electrical Engineering and Computer Science",
     date: "2025"
   },
   /* {

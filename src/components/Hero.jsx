@@ -26,7 +26,7 @@ export const Hero = () => {
             a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br></br> UI/UX. I work mainly with React and <br></br>
             React Native, and strive to learn about <br></br> how design decisions affect real users.
           </p>
-          <div className='flex flex-row gap-8 justify-center'>
+          <div className='flex flex-row gap-4 md:gap-8 justify-center'>
             <button
               className={`${styles.resumeButtonStyles} mt-8 `}>
               <a href={cv} download={"cv-Maria-Eleni-Kosma.pdf"}>
