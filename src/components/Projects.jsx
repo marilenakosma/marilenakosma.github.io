@@ -54,7 +54,7 @@ const ProjectCard = ({ index, project }) => {
             duration-300
             `}>
                 <img src={tag.logo}
-                  className="ml-1 w-4 h-4 rounded-md object-contain"
+                  className="ml-1 w-4 h-4 sm:w-2 sm:h-2 rounded-md object-contain"
                   alt={tag.name}
                 />
 
@@ -100,8 +100,8 @@ const ProjectCard = ({ index, project }) => {
             src={project.image}
             alt={project.image_alt}
             className={project.name === "Serenify(thesis)"
-              ? "w-40 h-50"
-              : "w-90 h-50"
+              ? "w-full h-50 sm:w-1/2 sm:h-25 md:w-full md:h-50"
+              : "w-full h-full sm:w-1/2 sm:h-1/2 md:w-full md:h-full"
             }
           />
         </div>
