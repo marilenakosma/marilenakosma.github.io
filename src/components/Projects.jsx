@@ -85,7 +85,7 @@ const ProjectCard = ({ index, project }) => {
           </h3>
 
           <div
-            onClick={() => window.open(project.source_code_link, "_blank")}
+            onClick={() => window.open(project.source_code_link, "_blank", "noreferrer")}
             className="rounded-full w-9 h-9 sm:w-10 sm:h-10 bg-gray-100
             flex justify-center items-center cursor-pointer shrink-0 [&:hover]:scale-110 transition duration-300">
             <img
