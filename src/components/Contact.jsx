@@ -4,7 +4,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { styles } from "../styles";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 
-import TextInput from "./ui/TextField.jsx";
+import TextField from "./ui/TextField.jsx";
 
 
 export const Contact = () => {
@@ -42,13 +42,24 @@ export const Contact = () => {
               Interested in working with me? You can send a message
             </h2>
 
-            <TextInput name="FirstName" placeholder="John" labelText="first name" required />
-            <TextInput name="LastName" placeholder="Doe" labelText="last name" required />
-            <TextInput name="Subject" placeholder="I want to talk about..." labelText="Subject" required />
+            <label className="block mb-1 text-sm font-medium text-white">
+              First Name:
+              <TextField name="FirstName" placeholder="John" labelText="first name" required />
+            </label>
+
+            <label className="block mb-1 text-sm font-medium text-white">Last Name:
+              <TextField name="LastName" placeholder="Doe" labelText="last name" required />
+            </label>
+
+            <label className="block mb-1 text-sm font-medium text-white">Subject:
+              <TextField name="Subject" placeholder="I want to talk about..." labelText="Subject" required />
+            </label>
 
             <div className="sm:col-span-2">
-              <TextInput name="Message" placeholder="Your message here...." as="textarea" labelText="message" required rows={6} />
-              {errorValidation("message")}
+              <label className="block mb-1 text-sm font-medium text-white">Message:
+                <TextField name="Message" placeholder="Your message here...." as="textarea" labelText="message" required rows={6} />
+                {errorValidation("message")}
+              </label>
             </div>
 
             <div className="flex flex-row justify-center mt-4">

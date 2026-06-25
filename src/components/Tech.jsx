@@ -10,9 +10,9 @@ export const Tech = () => {
   return (
     <>
       <motion.div className="mb-10" variants={textVariant()}>
-        <p className={styles.sectionHeadText}>
+        <h2 className={styles.sectionHeadText}>
           Technologies
-        </p>
+        </h2>
         <p className={`${styles.sectionSubText} text-center mt-4 mb-16 md:mb-24 lg:mb-30`}>
           Made it this far? Here's a sticker!
         </p>

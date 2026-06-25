@@ -140,12 +140,14 @@ const technologies = [
 const education = [
   {
     logo: pada,
+    logo_alt: "University of West Attica logo",
     name: "University of West Attica",
     description: "Informatics and Computer Engineering",
     date: "2020 - 2026"
   },
   {
     logo: brasov,
+    logo_alt: "University of Brasov logo",
     name: "University of Brasov(Erasmus+)",
     description: "Electrical Engineering and Computer Science",
     date: "2025"
@@ -170,6 +172,7 @@ const education = [
    }, */
   {
     logo: regeneration,
+    logo_alt: "Regeneration logo",
     name: "Regeneration Academy",
     description: "Full Stack Development with .NET and Angular",
     date: "2026",
@@ -268,22 +271,27 @@ const projects = [
     tags: [
       {
         logo: rn2,
+        logo_alt: "React Native logo",
         name: "React Native",
       },
       {
         logo: firebase,
+        logo_alt: "Firebase logo",
         name: "Firebase",
       },
       {
         logo: mmkv,
+        logo_alt: "MMKV logo",
         name: "MMKV",
       },
       {
         logo: asyncstorage,
+        logo_alt: "Async Storage logo",
         name: "Async Storage"
       },
       {
         logo: zustand,
+        logo_alt: "Zustand logo",
         name: "Zustand",
       },
     ],
@@ -298,22 +306,27 @@ const projects = [
     tags: [
       {
         logo: csharp,
+        logo_alt: "C# logo",
         name: "ASP.NET(C#)",
       },
       {
         logo: sqlserver,
+        logo_alt: "Sql Server logo",
         name: "SQL Server",
       },
       {
         logo: angular,
+        logo_alt: "Angular logo",
         name: "Angular",
       },
       {
         logo: docker,
+        logo_alt: "Docker logo",
         name: "Docker",
       },
       {
         logo: rabbitmq,
+        logo_alt: "RabbitMQ logo",
         name: "RabbitMQ",
       },
     ],
@@ -328,14 +341,17 @@ const projects = [
     tags: [
       {
         logo: java,
+        logo_alt: "Java Swing logo",
         name: "Java Swing",
       },
       {
         logo: openstreetmap,
+        logo_alt: "Open Street Map logo",
         name: "Open Street Map",
       },
       {
         logo: java,
+        logo_alt: "Flatlaf logo",
         name: "Flatlaf",
       },
     ],
@@ -350,18 +366,22 @@ const projects = [
     tags: [
       {
         logo: python,
+        logo_alt: "Python logo",
         name: "Python",
       },
       {
         logo: python,
+        logo_alt: "Python logo",
         name: "PyQt6",
       },
       {
         logo: sqlite,
+        logo_alt: "Sq Lite logo",
         name: "SQlite",
       },
       {
         logo: opentrivia,
+        logo_alt: "Open Trivia DB logo",
         name: "Open Trivia DB"
       }
     ],

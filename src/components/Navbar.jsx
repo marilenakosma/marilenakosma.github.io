@@ -61,10 +61,10 @@ export const Navbar = () => {
                         window.scrollTo(0, 0)
                     }}
                 >
-                    <p className="text-white text-base lg:text-lg 
+                    <h2 className="text-white text-base lg:text-lg 
                 font-bold cursor-pointer flex">
                         Marilena Kosma
-                    </p>
+                    </h2>
                 </Link>
 
                 <ul className="list-none hidden sm:flex 

@@ -52,7 +52,11 @@ export const Hero = () => {
 
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
-        <a href='#education'>
+        <a href='#education'
+          aria-disabled="true"
+          aria-hidden="true"
+          aria-label="Mouse animation"
+          title="Mouse">
           <div className='w-[35px] h-16 rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
               animate={{

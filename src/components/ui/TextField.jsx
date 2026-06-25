@@ -13,14 +13,10 @@ const TextField = ({
   let classes = "bg-white w-full mb-8 [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] border border-black/50 rounded-lg mx-auto text-black p-3"
   return (
     <>
-      <label htmlFor={name}
-        className="block mb-2 text-sm font-medium text-white">
-        Your {labelText}
-      </label>
       <Component
         // id={useId}
         name={name}
-        className={`${classes}`}
+        className={`${classes} mt-2`}
         type={type}
         placeholder={placeholder}
         required={required}
