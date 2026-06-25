@@ -51,9 +51,9 @@ const EducationCard = ({ index, education }) => {
             alt="education logo" />
         </div>
 
-        <h1 className={styles.educationHeadText}>
+        <p className={styles.educationHeadText}>
           {education.name}
-        </h1>
+        </p>
 
         <p className={styles.educationDescriptionText}>
           {education.description}
@@ -73,9 +73,9 @@ export const Education = () => {
   return (
     <>
       <motion.div className="mb-8" variants={textVariant()}>
-        <p className={styles.sectionHeadText}>
+        <h2 className={styles.sectionHeadText}>
           Education
-        </p>
+        </h2>
 
       </motion.div>
 
