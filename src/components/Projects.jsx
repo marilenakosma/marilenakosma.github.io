@@ -8,16 +8,9 @@ import Tilt from 'react-parallax-tilt';
 import { github } from "../assets/index.js";
 
 const ProjectCard = ({ index, project }) => {
-  {/* flex 
-  flex-col 
-  h-full 
-  w-full 
-  max-w-md 
-  rounded-lg 
-  p-2*/}
 
   const shouldReduceMotion = useReducedMotion()
-
+  const isPortrait = project.name === "Serenify(thesis)"
   return (
     <Tilt
       tiltEnable={false}
@@ -39,27 +32,42 @@ const ProjectCard = ({ index, project }) => {
         flex-col     
         items-center
         justify-center
+        pl-3
+        pr-3
+        pt-3
       `}>
 
-        <div className="flex flex-wrap min-h-5 gap-3 m-3 m-3 md:m-4 items-center">
+        <div className="flex flex-wrap 
+        min-h-5
+        gap-2 
+        sm:gap-3
+        mb-2 
+        sm:mb-3
+        md:mb-4 
+        items-center
+        self-start
+        ">
           {
             project.tags.map((tag) => (
-              <div className={`${styles.glassProjectTagsBg} flex items-center gap-1.5 
-            rounded-3xl 
-            px-2
-            font-semibold
-            [&:hover]:scale-110 
-            [&:hover]:border-white-100 
-            transition 
-            duration-300
+              <div
+                key={`${project.name}-${tag.name}`}
+                className={`${styles.glassProjectTagsBg} flex items-center gap-1.5 
+                rounded-3xl 
+                px-2
+                py-0.5
+                font-semibold
+                [&:hover]:scale-110 
+                [&:hover]:border-white-100 
+                transition 
+                duration-300
+                p-1
             `}>
                 <img src={tag.logo}
-                  className="ml-1 w-4 h-4 sm:w-2 sm:h-2 rounded-md object-contain"
+                  className="ml-1 w-3.5 h-3.5 sm:w-4 sm:h-4 md:w-4 md:h-4 rounded-md object-contain"
                   alt={tag.name}
                 />
 
                 <p
-                  key={`${project.name}-${tag.name}`}
                   className="mr-2 text-black text-[13px] xs:text-[14px] sm:text-[14px] md:text-[16px] 
                   font-light 
                   [&:hover]:font-medium"
@@ -71,15 +79,15 @@ const ProjectCard = ({ index, project }) => {
           }
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-4">
+        <div className="flex flex-row items-center gap-4">
           <h3 className={`${styles.projectsHeadText} mb-3`}>
             {project.name}
           </h3>
 
           <div
             onClick={() => window.open(project.source_code_link, "_blank")}
-            className="rounded-full w-8 h-8 bg-gray-100
-            flex justify-center items-center cursor-pointer">
+            className="rounded-full w-9 h-9 sm:w-10 sm:h-10 bg-gray-100
+            flex justify-center items-center cursor-pointer shrink-0 [&:hover]:scale-110 transition duration-300">
             <img
               src={github}
               alt="github logo"
@@ -95,14 +103,11 @@ const ProjectCard = ({ index, project }) => {
         </p>
 
 
-        <div className="mt-auto">
+        <div className={`mt-auto w-full ${isPortrait ? "max-w-[40%] mx-auto" : null}`}>
           <img
             src={project.image}
             alt={project.image_alt}
-            className={project.name === "Serenify(thesis)"
-              ? "w-full h-50 sm:w-1/2 sm:h-25 md:w-full md:h-50"
-              : "w-full h-full sm:w-1/2 sm:h-1/2 md:w-full md:h-full"
-            }
+            className="w-full h-full object-contain"
           />
         </div>
       </motion.div>
@@ -118,15 +123,6 @@ export const Projects = () => {
           Projects
         </h2>
       </motion.div>
-      {/*grid 
-  grid-cols-1 
-  md:grid-cols-2 
-  max-w-6xl 
-  mx-auto 
-  items-stretch 
-  justify-items-center 
-  gap-4 
-  p-5 */}
       <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl  mx-auto
                   place-items-center items-stretch gap-4  p-5">
         {

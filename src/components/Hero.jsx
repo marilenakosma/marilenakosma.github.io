@@ -29,12 +29,12 @@ export const Hero = () => {
           <div className='flex flex-row gap-4 md:gap-8 justify-center'>
             <button
               className={`${styles.resumeButtonStyles} mt-8 `}>
-              <a href={cv} aria-disabled="true" tabindex="-1" download={"cv-Maria-Eleni-Kosma.pdf"}>
+              <a href={cv} aria-disabled="true" tabIndex="-1" download={"cv-Maria-Eleni-Kosma.pdf"}>
                 Resume
               </a>
             </button>
             <button className={`${styles.projectButtonStyles} mt-8`}>
-              <a href="https://github.com/marilenakosma" aria-disabled="true" tabindex="-1" >
+              <a href="https://github.com/marilenakosma" aria-disabled="true" tabIndex="-1" >
                 Github
               </a>
             </button>
