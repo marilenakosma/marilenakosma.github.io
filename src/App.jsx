@@ -2,12 +2,10 @@ import { useState } from 'react'
 import { BrowserRouter } from 'react-router'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
-//import { About } from './components/About'
 import Education from './components/Education'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Tech from './components/Tech'
-//import Grainient from './components/backgrounds/Grainient';
 import Iridescence from './components/backgrounds/Iridescence'
 import Footer from './components/Footer'
 const App = () => {
@@ -25,12 +23,11 @@ const App = () => {
               onWebGLUnsupported={() => setWebglSupported(false)}
             />
           ) : (
-            // CSS-only fallback 
+            // CSS fallback 
             <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
           )}
         </div>
         <div>
-          {/*<div className="bg-linear-to-r from-cyan-500 to-blue-500">*/}
           <Navbar />
           <Hero />
         </div >

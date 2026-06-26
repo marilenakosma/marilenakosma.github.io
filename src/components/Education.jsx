@@ -6,23 +6,8 @@ import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from 'react-parallax-tilt';
 
-{/*bg-[rgba(255,255,255,0.2)]  */ }
-
 const EducationCard = ({ index, education }) => {
   return (
-    /*
-     flex 
-     flex-col 
-     flex: 1 0 auto      
-     min-w-[200px]      
-     max-w-[280px]      
-     min-h-[320px]      
-     rounded-lg 
-     bg-white/20 
-     backdrop-blur-xl 
-     border border-white/50 
-     p-2
-   */
 
     <Tilt
       tiltEnable={true}
@@ -81,18 +66,6 @@ export const Education = () => {
         </h2>
 
       </motion.div>
-
-      {/*<div className="
-  flex 
-  flex-wrap 
-  justify-center 
-  items-stretch 
-  gap-4 xs:gap-3 md:gap-4 lg:gap-15 xl:gap-18 2xl:gap-22 
-  p-2 
-  w-full 
-  max-w-7xl 
-  mx-auto
-"> */}
 
       <div className="flex 
                   flex-wrap

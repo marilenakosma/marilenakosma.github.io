@@ -28,8 +28,6 @@ const styles = {
     "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   footerButtonStyles:
     "rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text-w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
-  resumeButtonStylesAlt:
-    "rounded-3xl border border-(--glass-border) px-6 py-3 font-semibold shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-(--glass-bg) inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   projectButtonStyles:
     "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium  inset-shadow-current/20 backdrop-blur-sm bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   submitButtonStyles:
@@ -43,15 +41,6 @@ const styles = {
     "text-white text-balance font-light m-1 sm:m-1.5 md:m-2 text-[15px] leading-relaxed sm:text-base md:text-lg text-secondary tracking-wider flex-1",
   educationDateText:
     "text-white font-semibold text-sm sm:text-base md:text-lg mt-2",
-
-  educationContainerAlt:
-    "sm:w-55 xs:w-65 w-65 lg:w-55 @3xs:h-80 @xs:h-80 sm:h-80 rounded-lg bg-white [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] border border-blue-200 flex flex-col shrink basis-auto items-center p-2",
-  educationHeadTextAlt:
-    "text-black text-center font-semibold text-sm sm:text-base md:text-xl flex-1",
-  educationDescriptionTextAlt:
-    "text-black font-light m-2 text-[15px] leading-relaxed md:text-lg md:leading-loose text-secondary tracking-wider flex-1",
-  educationDateTextAlt:
-    "text-black font-semibold text-sm sm:text-base md:text-lg",
 
   projectTags:
     "flex items-center gap-1.5 rounded-3xl shadow-lg [box-shadow:0_4px_30px_rgba(0,0,0,0.3)] bg-white/40 shadow-2xl/20 inset-shadow-md px-2 font-semibold cursor-pointer [&:hover]:scale-110 [&:hover]:border-white-100 transition duration-300",
