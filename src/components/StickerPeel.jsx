@@ -7,6 +7,7 @@ gsap.registerPlugin(Draggable);
 
 const StickerPeel = ({
   imageSrc,
+  'aria-label': ariaLabel,
   rotate = 30,
   peelBackHoverPct = 30,
   peelBackActivePct = 40,
@@ -30,20 +31,25 @@ const StickerPeel = ({
     const target = dragTargetRef.current;
     const boundsEl = target.parentNode;
 
-    draggableInstanceRef.current = Draggable.create(target, {
-      type: 'x,y',
-      bounds: boundsEl,
-      inertia: true,
-      onDrag() {
-        const rot = gsap.utils.clamp(-24, 24, this.deltaX * 0.4);
-        gsap.to(target, { rotation: rot, duration: 0.15, ease: 'power1.out' });
-      },
-      onDragEnd() {
-        const rotationEase = 'power2.out';
-        const duration = 0.8;
-        gsap.to(target, { rotation: 0, duration, ease: rotationEase });
-      }
-    })[0];
+    // Defer Draggable setup to after the first paint to avoid forced reflow on mount.
+    // Draggable.create reads layout geometry (getBoundingClientRect, etc.) immediately,
+    // and with multiple stickers mounting at once this blocks LCP.
+    const rafId = requestAnimationFrame(() => {
+      draggableInstanceRef.current = Draggable.create(target, {
+        type: 'x,y',
+        bounds: boundsEl,
+        inertia: true,
+        onDrag() {
+          const rot = gsap.utils.clamp(-24, 24, this.deltaX * 0.4);
+          gsap.to(target, { rotation: rot, duration: 0.15, ease: 'power1.out' });
+        },
+        onDragEnd() {
+          const rotationEase = 'power2.out';
+          const duration = 0.8;
+          gsap.to(target, { rotation: 0, duration, ease: rotationEase });
+        }
+      })[0];
+    });
 
     const handleResize = () => {
       if (draggableInstanceRef.current) {
@@ -76,6 +82,7 @@ const StickerPeel = ({
     window.addEventListener('orientationchange', handleResize);
 
     return () => {
+      cancelAnimationFrame(rafId);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('orientationchange', handleResize);
       if (draggableInstanceRef.current) {
@@ -159,7 +166,13 @@ const StickerPeel = ({
   );
 
   return (
-    <div className={`draggable ${className}`} ref={dragTargetRef} style={cssVars}>
+    <div
+      className={`draggable ${className}`}
+      ref={dragTargetRef}
+      style={cssVars}
+      role="img"
+      aria-label={ariaLabel}
+    >
       <svg width="0" height="0">
         <defs>
           <filter id="pointLight">
@@ -216,8 +229,11 @@ const StickerPeel = ({
             <img
               src={imageSrc}
               alt=""
+              aria-hidden="true"
               className="sticker-image"
               draggable="false"
+              width={width}
+              height={width}
               onContextMenu={e => e.preventDefault()}
             />
           </div>
@@ -228,8 +244,11 @@ const StickerPeel = ({
             <img
               src={imageSrc}
               alt=""
+              aria-hidden="true"
               className="flap-image"
               draggable="false"
+              width={width}
+              height={width}
               onContextMenu={e => e.preventDefault()}
             />
           </div>

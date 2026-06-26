@@ -1,4 +1,3 @@
-import React from "react";
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";

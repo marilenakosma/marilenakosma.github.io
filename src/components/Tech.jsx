@@ -1,9 +1,8 @@
-import React from "react";
 import { motion } from "motion/react"
 import { styles } from "../styles.js";
-import { projects, technologies } from "../constants/index.js";
+import { technologies } from "../constants/index.js";
 import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { fadeIn, textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 import StickerPeel from './StickerPeel.jsx'
 
 export const Tech = () => {
@@ -21,9 +20,8 @@ export const Tech = () => {
       <div className="flex flex-row justify-center flex-wrap gap-4 max-w-4xl mx-auto mb-4 md:mb-6 lg:mb-8">
         {
           technologies.map((tech) => (
-            <div className="flex flex-col items-center justify-end gap-4 mb-7">
+            <div key={tech.name} className="flex flex-col items-center justify-end gap-4 mb-7">
               <StickerPeel
-                key={tech.name}
                 aria-label={tech.name}
                 imageSrc={tech.icon}
                 width={100}

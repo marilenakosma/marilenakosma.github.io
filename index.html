@@ -1,13 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!--link rel="icon" type="image/svg+xml" href="/vite.svg" /-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marilena Kosma</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <!--link rel="icon" type="image/svg+xml" href="/vite.svg" /-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marilena Kosma</title>
+  <meta name="description"
+    content="Marilena Kosma — Fullstack Developer. Portfolio showcasing React, TypeScript, and full-stack projects.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!--
+    Load Montserrat as non-render-blocking:
+    media="print" means the browser fetches it at low priority without blocking render.
+    onload switches it to media="all" once it's downloaded.
+    <noscript> provides a fallback for users with JS disabled.
+  -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" />
+  </noscript>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>

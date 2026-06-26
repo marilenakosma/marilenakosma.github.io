@@ -47,8 +47,11 @@ const EducationCard = ({ index, education }) => {
       >
         <div className="mt-4 md:mt-8">
           <img src={education.logo}
-            className="w-16 h-auto block rounded-full mb-4"
-            alt={education.logo_alt} />
+            className="w-16 h-16 block rounded-full mb-4 object-contain"
+            alt={education.logo_alt}
+            width="64"
+            height="64"
+          />
         </div>
 
         <p className={styles.educationHeadText}>

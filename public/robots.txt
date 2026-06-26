@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /includes/
+
+User-agent: Googlebot
+Allow: /includes/
+Sitemap: https://marilenakosma.github.io/sitemap.xml

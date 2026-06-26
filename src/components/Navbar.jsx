@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react'
+import { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router'
 import { styles } from '../styles';
 import { navLinks } from '../constants/index';
@@ -48,7 +48,7 @@ export const Navbar = () => {
                 `${styles.paddingX} ${styles.glassBg} ${styles.glassNavbarBorder} w-full flex items-center 
             py-5 fixed top-0 z-20`
             }>
-            <a href="#education" className="absolute left-0 top-0 bg-blue-500 text-white py-2 px-4 z-50 transform -translate-y-full focus:translate-y-0 transition">
+            <a href="#education" className="absolute left-0 top-0 bg-blue-700 text-white py-2 px-4 z-50 transform -translate-y-full focus:translate-y-0 transition">
                 Skip to education
             </a>
             <div className="w-full flex justify-between
@@ -108,7 +108,7 @@ export const Navbar = () => {
                             ref={toggleBtnRef}
                             id="menubutton"
                             type="button"
-                            aria-expanded={toggle} //aria-expanded tells screen readers what this button controls
+                            aria-expanded={toggle}
                             aria-controls="mobile-menu"
                             aria-haspopup="true"
                             className="relative inline-flex items-center justify-center 
@@ -119,19 +119,17 @@ export const Navbar = () => {
                             focus:-outline-offset-1 
                             focus:outline-white"
                             onClick={() => setToggle(!toggle)}
-                        />
-                        <span className="absolute -inset-0.5"></span>
-                        <span className="sr-only">
-                            {toggle ? "Close menu" : "Open menu"}
-                        </span>
-                        <img
-                            src={toggle ? close : menu}
-                            alt=""
-                            className="relative w-7 h-7
-                            object-contain cursor-pointer"
-                            onClick={() => setToggle(!toggle)}
                         >
-                        </img>
+                            <span className="absolute -inset-0.5"></span>
+                            <span className="sr-only">
+                                {toggle ? "Close menu" : "Open menu"}
+                            </span>
+                            <img
+                                src={toggle ? close : menu}
+                                alt=""
+                                className="relative w-7 h-7 object-contain"
+                            />
+                        </button>
 
                     </div>
 
@@ -144,8 +142,10 @@ export const Navbar = () => {
                     <div
                         id="mobile-menu"
                         className={`${!toggle ? "hidden" : "flex"} 
-                   ${styles.glassBg} ${styles.glassBorder} p-8  absolute top-[60px] 
-                   [box-shadow:0_4px_30px_rgba(0,0,0,0.4)]       
+                    ${styles.glassBorder} 
+                    shadow-2xl/20 inset-shadow-current/20 backdrop-blur-xl bg-white/40 inset-shadow-sm 
+                     p-8  absolute top-[60px] 
+                   [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] 
                    right-1 mx-4 my-4 min-w-[150px] 
                    z-10 rounded-xl`}
                     >
@@ -164,7 +164,7 @@ export const Navbar = () => {
                                     className={
                                         `${active === link.title
                                             ? "text-white decoration-[#F64FFF] underline"
-                                            : "text-secondary"
+                                            : "text-white"
                                         }
                         font-medium cursor-pointer
                         text-[16px] [text-shadow:0_4px_30px_rgba(0,0,0,1)]
