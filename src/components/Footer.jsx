@@ -11,9 +11,6 @@ export default function Footer() {
                         <h2 className="text-white font-bold  text-lg md:text-2xl sm:text-2xl">
                             Marilena Kosma</h2>
 
-                        <h3 className="text-white decoration-[#F64FFF] underline text-sm md:text-base">
-                            Full-stack Developer
-                        </h3>
                         <div className="mt-2 flex flex-col flex-wrap gap-2">
                             <p className="text-white/70 text-sm">
                                 © {new Date().getFullYear()} Marilena Kosma. All rights reserved.
