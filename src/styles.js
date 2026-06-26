@@ -6,7 +6,7 @@ const styles = {
   /* [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] */
   /* border-[rgba(255,255,255,0.3)] */
   glassBg:
-    "bg-white/20 bg-[rgba(0,0,0,0.4)] bg-white/15-blur-xl",
+    "bg-white/20 bg-[rgba(0,0,0,0.4)] bg-white/15",
   glassNavbarBorder:
     "border border-transparent border-b-white/50",
   glassBorder:
@@ -25,13 +25,13 @@ const styles = {
     "mb-8 text-secondary text-base md:text-lg lg:text-xl",
 
   glassButtonStyles:
-    "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 bg-white/15-blur-sm bg-gray-100 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 bg-gray-300 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   footerButtonStyles:
-    "rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium shadow-2xl/20 inset-shadow-current/20 bg-white/15-blur-sm bg-gray-100 inset-shadow-sm text-w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium shadow-2xl/20 inset-shadow-current/20 bg-gray-300 inset-shadow-sm text-w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   projectButtonStyles:
-    "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium  inset-shadow-current/20 bg-white/15-blur-sm bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium  inset-shadow-current/20  bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   submitButtonStyles:
-    "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 bg-white/15-blur-sm bg-gray-100 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 bg-gray-300 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
 
   educationHeadText:
     "text-white text-center font-semibold text-base sm:text-lg md:text-xl flex-1",

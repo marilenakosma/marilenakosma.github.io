@@ -20,7 +20,7 @@ const EducationCard = ({ index, education }) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className={`${styles.glassBg} bg-white/15-blur-xl
+        className={`${styles.glassBg} bg-white/15
          w-44 h-full
          sm:w-55
          md:w-60 
