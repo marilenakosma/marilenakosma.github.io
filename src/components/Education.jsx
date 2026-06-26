@@ -35,17 +35,17 @@ const EducationCard = ({ index, education }) => {
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className={`${styles.glassBg}  backdrop-blur-xl w-60 h-89 rounded-lg
-         border border-white/50 
-         flex 
-         flex-col 
-         flex: 1 0 auto
-         items-center  
-         p-2 
-         md:p-4
+        className={`${styles.glassBg} backdrop-blur-xl
+         w-44 h-full
+         sm:w-55
+         md:w-60 md:h-89
+         rounded-lg
+         border border-white/50
+         flex flex-col items-center
+         p-2 md:p-3
       `}
       >
-        <div className="mt-4 md:mt-8">
+        <div className="mt-3 md:mt-8">
           <img src={education.logo}
             className="w-16 h-16 block rounded-full mb-4 object-contain"
             alt={education.logo_alt}
