@@ -15,9 +15,9 @@ const styles = {
     "bg-white/50 shadow-lg bg-[rgba(0,0,0,0.4)] shadow-2xl/20 inset-shadow-md",
 
   heroHeadText:
-    "font-black text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight sm:leading-snug lg:leading-[98px] mt-2",
+    "font-black text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-tight sm:leading-tight lg:leading-[98px] mt-2",
   heroSubText:
-    "text-[#dfd9ff] font-regular text-base xs:text-xl sm:text-xl sm:leading-relaxed md:leading-relaxed md:text-2xl lg:text-3xl lg:leading-[42px]",
+    "text-[#dfd9ff] font-regular text-base text-wrap xs:text-lg sm:text-xl sm:leading-relaxed md:leading-relaxed md:text-2xl lg:text-3xl lg:leading-[42px]",
 
   sectionHeadText:
     "text-white text-center font-black text-4xl leading-tight md:text-5xl lg:text-6xl",
