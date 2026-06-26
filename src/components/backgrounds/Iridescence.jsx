@@ -63,7 +63,7 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
     try {
       renderer = new Renderer();
       gl = renderer.gl;
-      gl.clearColor(1, 1, 1, 1);
+      gl.clearColor(0, 0, 0, 1);
     } catch {
       onWebGLUnsupported?.();
       return;
@@ -142,5 +142,5 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [color, speed, amplitude, mouseReact, onWebGLUnsupported]);
 
-  return <div ref={ctnDom} className="w-full h-full" {...rest} />;
+  return <div ref={ctnDom} className="w-full h-full bg-black" {...rest} />;
 }
