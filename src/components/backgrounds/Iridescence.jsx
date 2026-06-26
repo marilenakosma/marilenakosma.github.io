@@ -82,7 +82,12 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
         );
       }
     }
-    window.addEventListener('resize', resize, false);
+    let resizeTimer;
+    function debouncedResize() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(resize, 100);
+    }
+    window.addEventListener('resize', debouncedResize, false);
     resize();
 
     const geometry = new Triangle(gl);
@@ -125,7 +130,7 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
 
     return () => {
       cancelAnimationFrame(animateId);
-      window.removeEventListener('resize', resize);
+      window.removeEventListener('resize', debouncedResize);
       if (mouseReact) {
         ctn.removeEventListener('mousemove', handleMouseMove);
       }
