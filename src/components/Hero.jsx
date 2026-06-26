@@ -20,7 +20,7 @@ export const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white text-shadow-lg`}>
-            Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena</span>,
+            Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena,</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-balance text-white-100 text-shadow-lg`}>
             a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br className="hidden sm:inline"></br> UI/UX. I work mainly with React and <br className="hidden sm:inline"></br>

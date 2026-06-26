@@ -143,7 +143,7 @@ export const Navbar = () => {
                         id="mobile-menu"
                         className={`${!toggle ? "hidden" : "flex"} 
                     ${styles.glassBorder} 
-                    shadow-2xl/20 inset-shadow-current/20 backdrop-blur-xl bg-white/40 inset-shadow-sm 
+                    shadow-2xl/20 inset-shadow-current/20 bg-white/15 bg-white/40 inset-shadow-sm 
                      p-8  absolute top-[60px] 
                    [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] 
                    right-1 mx-4 my-4 min-w-[150px] 
