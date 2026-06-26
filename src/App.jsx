@@ -14,9 +14,18 @@ const App = () => {
     <>
       <BrowserRouter>
         <div className="fixed inset-0 will-change-transform contain-strict -z-3">
-
-          <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
-
+          {webGlSupported ? (
+            <Iridescence
+              color={[0.3, 0.4, 0.7]}
+              mouseReact={false}
+              amplitude={0.1}
+              speed={1.0}
+              onWebGLUnsupported={() => setWebglSupported(false)}
+            />
+          ) : (
+            // CSS fallback 
+            <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
+          )}
         </div>
         <div>
           <Navbar />
