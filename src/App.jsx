@@ -13,11 +13,11 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
+        <div className="fixed inset-0 will-change-transform contain-strict -z-3">
 
+          <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
 
-        <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
-
-
+        </div>
         <div>
           <Navbar />
           <Hero />
