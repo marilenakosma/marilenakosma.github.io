@@ -27,18 +27,16 @@ const styles = {
   glassButtonStyles:
     "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   footerButtonStyles:
-    "rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text-w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
+    "rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-gray-100 inset-shadow-sm text-w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   projectButtonStyles:
     "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium  inset-shadow-current/20 backdrop-blur-sm bg-black inset-shadow-sm text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
   submitButtonStyles:
     "rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 backdrop-blur-sm bg-white/60 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition duration-300",
-  githubButtonStyles:
-    "rounded-3xl w-9 h-9 sm:w-10 sm:h-10 bg-gray-100 flex justify-center items-center  inset-shadow-current/20 backdrop-blur-sm bg-(--glass-bg) inset-shadow-sm cursor-pointer shrink-0 [&:hover]:scale-110 transition duration-300",
 
   educationHeadText:
     "text-white text-center font-semibold text-base sm:text-lg md:text-xl flex-1",
   educationDescriptionText:
-    "text-white text-balance font-light m-1 sm:m-1.5 md:m-2 text-[15px] leading-relaxed sm:text-base md:text-lg text-secondary tracking-wider flex-1",
+    "text-white text-balance font-light m-1 xs:m-6 sm:m-4 md:m-2 text-[15px] leading-relaxed sm:text-base md:text-lg text-secondary tracking-wider flex-1",
   educationDateText:
     "text-white font-semibold text-sm sm:text-base md:text-lg mt-2",
 
@@ -48,6 +46,8 @@ const styles = {
     "text-white font-semibold text-base sm:text-lg md:text-xl mt-3 object-contain",
   projectsDescriptionText:
     "text-white text-center text-balance p-1 lg:pl-5 lg:pr-5 font-light text-[15px] leading-relaxed sm:text-base md:text-lg text-secondary tracking-wider",
+  githubButtonStyles:
+    "rounded-3xl w-9 h-9 sm:w-10 sm:h-10 bg-gray-100 flex justify-center items-center  inset-shadow-current/20 backdrop-blur-sm bg-(--glass-bg) inset-shadow-sm cursor-pointer shrink-0 [&:hover]:scale-110 transition duration-300",
 
 };
 

@@ -36,7 +36,6 @@ const App = () => {
         <Projects />
         <Contact />
         <Footer />
-        {/*} </div> */}
       </BrowserRouter>
     </>
   )

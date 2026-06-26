@@ -127,7 +127,7 @@ export const Navbar = () => {
                             <img
                                 src={toggle ? close : menu}
                                 alt=""
-                                className="relative w-7 h-7 object-contain"
+                                className="relative w-7 h-7 object-contain "
                             />
                         </button>
 
@@ -163,10 +163,10 @@ export const Navbar = () => {
                                     key={link.id}
                                     className={
                                         `${active === link.title
-                                            ? "text-white decoration-[#F64FFF] underline"
+                                            ? "text-white decoration-[#F64FFF] underline "
                                             : "text-white"
                                         }
-                        font-medium cursor-pointer
+                        font-medium hover:text-white hover:decoration-[#F64FFF] hover:underline cursor-pointer
                         text-[16px] [text-shadow:0_4px_30px_rgba(0,0,0,1)]
                         `
                                     }

@@ -7,13 +7,27 @@ export default function Footer() {
             <section className={`${styles.glassBg} py-8 md:py-12 lg:py-16
       border border-transparent border-t-white/50`}>
                 <div className="flex flex-row justify-around items-center gap-8 px-4 mx-auto lg:px-8 max-7-xl">
-                    <div className="flex flex-col justify-center ">
+                    <div className="flex flex-col justify-center">
                         <h2 className="text-white font-bold  text-lg md:text-2xl sm:text-2xl">
                             Marilena Kosma</h2>
 
                         <h3 className="text-white decoration-[#F64FFF] underline text-sm md:text-base">
                             Full-stack Developer
                         </h3>
+                        <div className="mt-2 flex flex-col flex-wrap gap-2">
+                            <p className="text-white/70 text-sm">
+                                © {new Date().getFullYear()} Marilena Kosma. All rights reserved.
+                            </p>
+                            <a href="#" className="
+                            text-white 
+                            hover:decoration-[#F64FFF] 
+                            hover:underline 
+                            text-sm 
+                            transition-colors 
+                            duration-200">
+                                ↑ Back to top
+                            </a>
+                        </div>
 
                     </div>
 
@@ -61,14 +75,6 @@ export default function Footer() {
                         </li>
                     </ul>
 
-                </div>
-                <div className="mt-5 pt-4 flex flex-col md:flex-row items-center justify-center gap-2">
-                    <p className="text-white/70 text-sm">
-                        © {new Date().getFullYear()} Marilena Kosma. All rights reserved.
-                    </p>
-                    <a href="#" className="text-white hover:decoration-[#F64FFF] hover:underline text-sm transition-colors duration-200">
-                        ↑ Back to top
-                    </a>
                 </div>
             </section>
 

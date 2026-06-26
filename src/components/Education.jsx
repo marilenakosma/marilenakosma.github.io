@@ -23,7 +23,8 @@ const EducationCard = ({ index, education }) => {
         className={`${styles.glassBg} backdrop-blur-xl
          w-44 h-full
          sm:w-55
-         md:w-60 md:h-89
+         md:w-60 
+         md:h-89
          rounded-lg
          border border-white/50
          flex flex-col items-center
