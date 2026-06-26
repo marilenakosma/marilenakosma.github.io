@@ -61,7 +61,7 @@ const EducationCard = ({ index, education }) => {
 export const Education = () => {
   return (
     <>
-      <motion.div className="mb-8 mt-140" variants={textVariant()}>
+      <motion.div className="mb-8" variants={textVariant()}>
         <h2 className={styles.sectionHeadText}>
           Education
         </h2>
