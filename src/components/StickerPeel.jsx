@@ -34,7 +34,7 @@ const StickerPeel = ({
     // Defer Draggable setup to after the first paint to avoid forced reflow on mount.
     // Draggable.create reads layout geometry (getBoundingClientRect, etc.) immediately,
     // and with multiple stickers mounting at once this blocks LCP.
-    const rafId = requestAnimationFrame(() => {
+    const timeoutId = setTimeout(() => {
       draggableInstanceRef.current = Draggable.create(target, {
         type: 'x,y',
         bounds: boundsEl,
@@ -49,7 +49,7 @@ const StickerPeel = ({
           gsap.to(target, { rotation: 0, duration, ease: rotationEase });
         }
       })[0];
-    });
+    }, 0);
 
     const handleResize = () => {
       if (draggableInstanceRef.current) {
@@ -82,7 +82,7 @@ const StickerPeel = ({
     window.addEventListener('orientationchange', handleResize);
 
     return () => {
-      cancelAnimationFrame(rafId);
+      clearTimeout(timeoutId);
       window.removeEventListener('resize', handleResize);
       window.removeEventListener('orientationchange', handleResize);
       if (draggableInstanceRef.current) {

@@ -177,19 +177,18 @@ const Grainient = ({
 
     const mesh = new Mesh(gl, { geometry, program });
 
-    const setSize = () => {
-      const rect = container.getBoundingClientRect();
-      const width = Math.max(1, Math.floor(rect.width));
-      const height = Math.max(1, Math.floor(rect.height));
-      renderer.setSize(width, height);
-      const res = program.uniforms.iResolution.value;
-      res[0] = gl.drawingBufferWidth;
-      res[1] = gl.drawingBufferHeight;
-    };
-
-    const ro = new ResizeObserver(setSize);
+    const ro = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        const { width, height } = entry.contentRect;
+        const w = Math.max(1, Math.floor(width));
+        const h = Math.max(1, Math.floor(height));
+        renderer.setSize(w, h);
+        const res = program.uniforms.iResolution.value;
+        res[0] = gl.drawingBufferWidth;
+        res[1] = gl.drawingBufferHeight;
+      }
+    });
     ro.observe(container);
-    setSize();
 
     let raf = 0;
     const t0 = performance.now();

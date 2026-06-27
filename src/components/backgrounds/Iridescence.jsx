@@ -71,24 +71,20 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
 
     let program;
 
-    function resize() {
-      const scale = 1;
-      renderer.setSize(ctn.offsetWidth * scale, ctn.offsetHeight * scale);
-      if (program) {
-        program.uniforms.uResolution.value = new Color(
-          gl.canvas.width,
-          gl.canvas.height,
-          gl.canvas.width / gl.canvas.height
-        );
+    const resizeObserver = new ResizeObserver(entries => {
+      for (let entry of entries) {
+        const { width, height } = entry.contentRect;
+        renderer.setSize(width, height);
+        if (program) {
+          program.uniforms.uResolution.value = new Color(
+            gl.canvas.width,
+            gl.canvas.height,
+            gl.canvas.width / gl.canvas.height
+          );
+        }
       }
-    }
-    let resizeTimer;
-    function debouncedResize() {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(resize, 100);
-    }
-    window.addEventListener('resize', debouncedResize, false);
-    resize();
+    });
+    resizeObserver.observe(ctn);
 
     const geometry = new Triangle(gl);
     program = new Program(gl, {
@@ -130,7 +126,7 @@ export default function Iridescence({ color = [1, 1, 1], speed = 1.0, amplitude 
 
     return () => {
       cancelAnimationFrame(animateId);
-      window.removeEventListener('resize', debouncedResize);
+      resizeObserver.disconnect();
       if (mouseReact) {
         ctn.removeEventListener('mousemove', handleMouseMove);
       }
