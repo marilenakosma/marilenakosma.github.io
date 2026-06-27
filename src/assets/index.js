@@ -1,6 +1,4 @@
 import github from "./tech/github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -54,7 +52,6 @@ import cv from './cv/cv_Maria_Eleni_Kosma.pdf'
 
 export {
   github,
-  menu,
   close,
   css,
   docker,
