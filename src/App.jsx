@@ -27,10 +27,8 @@ const App = () => {
             <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
           )}
         </div>
-        <div>
-          <Navbar />
-          <Hero />
-        </div >
+        <Navbar />
+        <Hero />
         <Education />
         <Tech />
         <Projects />
