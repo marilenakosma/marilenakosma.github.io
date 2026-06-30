@@ -9,8 +9,8 @@ export const Hero = () => {
 
       {/*bg-[rgba(0,0,0,0.3)] */}
       <div
-        className={`absolute inset-0 top-[150px]  max-w-7xl mx-auto ${styles.paddingX}
-         flex flex-row items-start gap-5 `}
+        className={`absolute inset-0 top-[150px] max-w-7xl mx-auto ${styles.paddingX}
+         flex flex-row items-start gap-5`}
       >
 
         <div>
