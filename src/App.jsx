@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="fixed inset-0 h-full w-full top-0 left-0 will-change-transform contain-strict -z-3">
+        <div className="fixed inset-0 min-h-[100dvh] w-full will-change-transform -z-10 bg-primary">
           {webGlSupported ? (
             <Iridescence
               color={[0.3, 0.4, 0.7]}
