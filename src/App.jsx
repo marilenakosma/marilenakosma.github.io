@@ -13,11 +13,11 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="fixed inset-0 min-h-[100dvh] w-full will-change-transform -z-10 bg-primary">
+        <div className="fixed inset-0 min-h-[100dvh] w-full will-change-transform -z-10">
           {webGlSupported ? (
             <Iridescence
               color={[0.3, 0.4, 0.7]}
-              mouseReact={false}
+              mouseReact={true}
               amplitude={0.1}
               speed={1.0}
               onWebGLUnsupported={() => setWebglSupported(false)}
