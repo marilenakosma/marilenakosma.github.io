@@ -3,6 +3,7 @@ import { Link } from 'react-router'
 import { styles } from '../styles';
 import { navLinks } from '../constants/index';
 import { menu, close } from '../assets';
+import '../index.css';
 
 export const Navbar = () => {
     const [active, setActive] = useState("");
@@ -45,9 +46,10 @@ export const Navbar = () => {
     return (
         <nav
             className={
-                `${styles.paddingX} ${styles.glassBg} ${styles.glassNavbarBorder} w-full flex items-center 
+                `${styles.paddingX} ${styles.glassNavbarBorder} w-full flex items-center 
             py-5 fixed top-0 z-20`
             }>
+            <div className="absolute inset-0 glassBlurBg -z-10" />
             <a href="#education" className="absolute left-0 top-0 bg-blue-700 text-white py-2 px-4 z-50 transform -translate-y-full focus:translate-y-0 transition">
                 Skip to education
             </a>
@@ -117,7 +119,7 @@ export const Navbar = () => {
                             hover:text-white 
                             focus:outline-2 
                             focus:-outline-offset-1 
-                            focus:outline-white"
+                            focus:outline-white "
                             onClick={() => setToggle(!toggle)}
                         >
                             <span className="absolute -inset-0.5"></span>
@@ -142,12 +144,11 @@ export const Navbar = () => {
                     <div
                         id="mobile-menu"
                         className={`${!toggle ? "hidden" : "flex"} 
-                    ${styles.glassBorder} 
-                    shadow-2xl/20 inset-shadow-current/20 bg-white/15 bg-white/40 inset-shadow-sm 
-                     p-8  absolute top-[60px] 
-                   [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] 
-                   right-1 mx-4 my-4 min-w-[150px] 
-                   z-10 rounded-xl`}
+                        ${styles.glassBorder} glassBlurBg
+                        shadow-2xl/20 inset-shadow-current/20 inset-shadow-sm 
+                        p-8  absolute top-[60px] 
+                        right-1 mx-4 my-4 min-w-[150px] 
+                        z-10 rounded-xl`}
                     >
 
                         <ul
