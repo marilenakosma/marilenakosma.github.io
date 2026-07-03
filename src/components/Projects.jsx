@@ -34,6 +34,7 @@ const ProjectCard = ({ index, project }) => {
         pl-3
         pr-3
         pt-3
+        backdrop-blur-sm bg-white/20
       `}>
 
         <div className="flex flex-wrap 

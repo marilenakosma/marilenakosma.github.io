@@ -49,7 +49,7 @@ export const Navbar = () => {
                 `${styles.paddingX} ${styles.glassNavbarBorder} w-full flex items-center 
             py-5 fixed top-0 z-20`
             }>
-            <div className="absolute inset-0 backdrop-blur-sm bg-white/20 -z-10" />
+            <div className="absolute inset-0 top-0 backdrop-blur-sm bg-white/20 -z-10" />
             <a href="#education" className="absolute left-0 top-0 bg-blue-700 text-white py-2 px-4 z-50 transform -translate-y-full focus:translate-y-0 transition">
                 Skip to education
             </a>
