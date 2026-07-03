@@ -49,7 +49,7 @@ export const Navbar = () => {
                 `${styles.paddingX} ${styles.glassNavbarBorder} w-full flex items-center 
             py-5 fixed top-0 z-20`
             }>
-            <div className="absolute inset-0 glassBlurBg -z-10" />
+            <div className="absolute inset-0 backdrop-blur-sm bg-white/20 -z-10" />
             <a href="#education" className="absolute left-0 top-0 bg-blue-700 text-white py-2 px-4 z-50 transform -translate-y-full focus:translate-y-0 transition">
                 Skip to education
             </a>
@@ -144,7 +144,7 @@ export const Navbar = () => {
                     <div
                         id="mobile-menu"
                         className={`${!toggle ? "hidden" : "flex"} 
-                        ${styles.glassBorder} glassBlurBg
+                        ${styles.glassBorder} backdrop-blur-md bg-white/20
                         shadow-2xl/20 inset-shadow-current/20 inset-shadow-sm 
                         p-8  absolute top-[60px] 
                         right-1 mx-4 my-4 min-w-[150px] 
