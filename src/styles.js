@@ -30,12 +30,20 @@ const styles = {
   glassButtonStyles:
     `relative rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium 
      shadow-2xl/20 inset-shadow-current/20 
-     bg-gray-200 inset-shadow-xs text-w-fit cursor-pointer 
+     bg-gray-200 inset-shadow-xs w-fit cursor-pointer 
      [&:hover]:scale-110 transition duration-300
      before:absolute before:inset-0 before:bg-linear-to-b
      before:from-white/40 before:to-transparent hover:bg-white
      active:bg-gray-200 active:shadow-none
      active:inset-shadow-gray-300 overflow-hidden`,
+  projectButtonStyles:
+    `relative rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium  
+     bg-black text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300
+    shadow-md inset-shadow-xs inset-shadow-neutral-600 
+    before:absolute before:inset-0 before:bg-linear-to-b
+    before:from-white/20 before:to-transparent hover:bg-neutral-800
+    active:bg-neutral-950 active:shadow-none
+    active:inset-shadow-neutral-800 overflow-hidden`,
   footerButtonStyles:
     `relative rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium 
     inset-shadow-sm text-w-fit text-neutral-900 bg-gray-100 overflow-hidden
@@ -55,7 +63,7 @@ const styles = {
     active:bg-blue-700 active:shadow-none
     active:inset-shadow-blue-800`,
   githubFooterButtonStyles:
-    `relative rounded-3xl px-3 py-2 md:px-4 md:py-2 font-medium 
+    `relative rounded-3xl px-5 py-2 md:px-4 md:py-2 font-medium 
     inset-shadow-sm text-w-fit text-neutral-100 bg-black overflow-hidden
     cursor-pointer [&:hover]:scale-110 transition duration-300
     shadow-md inset-shadow-2xs inset-shadow-neutral-600 transition-all
@@ -63,14 +71,6 @@ const styles = {
     before:from-white/20 before:to-transparent hover:bg-neutral-800
     active:bg-neutral-950 active:shadow-none
     active:inset-shadow-neutral-800`,
-  projectButtonStyles:
-    `relative rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium  
-     bg-black text-white w-fit cursor-pointer [&:hover]:scale-110 transition duration-300
-    shadow-md inset-shadow-xs inset-shadow-neutral-600 
-    before:absolute before:inset-0 before:bg-linear-to-b
-    before:from-white/20 before:to-transparent hover:bg-neutral-800
-    active:bg-neutral-950 active:shadow-none
-    active:inset-shadow-neutral-800 overflow-hidden`,
   submitButtonStyles:
     `rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium shadow-2xl/20 inset-shadow-current/20 
     bg-gray-300 inset-shadow-sm text- w-fit cursor-pointer [&:hover]:scale-110 transition 
