@@ -14,12 +14,19 @@ const App = () => {
   return (
     <>
       <BrowserRouter>
-        <div className="fixed inset-0 h-full w-full top-0 left-0 -z-10">
+        <div className="fixed top-0 left-0 w-full h-[100vh] -z-10">
           {webGlSupported ? (
             <FluidBackground
               onWebGLUnsupported={
                 () =>
                   setWebglSupported(false)} />
+            /*  {<Iridescence
+              color={[0.3, 0.4, 0.7]} //#8099cc
+              mouseReact={false}
+              amplitude={0.1}
+              speed={1.0}
+              onWebGLUnsupported={() => setWebglSupported(false)}
+            /> }*/
           ) : (
             // CSS fallback 
             <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
