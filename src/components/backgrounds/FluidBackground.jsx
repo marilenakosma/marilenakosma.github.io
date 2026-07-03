@@ -144,10 +144,10 @@ const defaultConfig = {
     fluidDecay: 0.98,
     trailLength: 0.8,
     stopDecay: 0.85,
-    color1: "#92b7b3ff",
-    color2: "#a2b9d6ff",
+    color1: "#42a89dff",
+    color2: "#52346eff",
     color3: "#0133ff",
-    color4: "#221636ff",
+    color4: "#66d1fe",
     colorIntensity: 1.0,
     softness: 1.0,
 };
@@ -229,11 +229,13 @@ export default function FluidBackground({ config = defaultConfig, onWebGLUnsuppo
         let mouseX = 0, mouseY = 0, prevMouseX = 0, prevMouseY = 0;
         let lastMoveTime = 0;
         const handleMouseMove = (e) => {
-            const rect = container.getBoundingClientRect();
+            //const rect = container.getBoundingClientRect();
             prevMouseX = mouseX;
             prevMouseY = mouseY;
-            mouseX = e.clientX - rect.left;
-            mouseY = rect.height - (e.clientY - rect.top);
+            //mouseX = e.clientX - rect.left;
+            mouseX = e.clientX;
+            //mouseY = rect.height - (e.clientY - rect.top);
+            mouseY = window.innerHeight - e.clientY;
             lastMoveTime = performance.now();
             fluidMaterial.uniforms.iMouse.value.set(mouseX, mouseY, prevMouseX, prevMouseY);
         };
@@ -300,8 +302,10 @@ export default function FluidBackground({ config = defaultConfig, onWebGLUnsuppo
         return () => {
             cancelAnimationFrame(animationFrameId);
             window.removeEventListener("resize", handleResize);
-            container.removeEventListener("mousemove", handleMouseMove);
-            container.removeEventListener("mouseleave", handleMouseLeave);
+            //container.removeEventListener("mousemove", handleMouseMove);
+            //container.removeEventListener("mouseleave", handleMouseLeave);
+            window.removeEventListener("mousemove", handleMouseMove);
+            window.removeEventListener("mouseleave", handleMouseLeave);
             if (container.contains(renderer.domElement)) {
                 container.removeChild(renderer.domElement);
             }
