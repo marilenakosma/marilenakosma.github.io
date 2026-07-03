@@ -5,12 +5,12 @@ import { cv } from '../assets';
 
 export const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className={`relative w-full mx-auto`}>
 
       {/*bg-[rgba(0,0,0,0.3)] */}
       <div
-        className={`absolute inset-0 top-[150px] max-w-5xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto ${styles.paddingX}
-         flex flex-row items-start gap-5`}
+        className={`relative pt-[150px] pb-20 max-w-7xl mx-auto ${styles.paddingX}
+         flex flex-row items-start gap-5 min-h-[90vh] sm:min-h-[90vh] lg:min-h-[100vh]`}
       >
         <div>
           <h1 className={`${styles.heroHeadText} text-white text-shadow-lg`}>
