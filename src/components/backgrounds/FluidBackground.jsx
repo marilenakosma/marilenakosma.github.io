@@ -242,8 +242,11 @@ export default function FluidBackground({ config = defaultConfig, onWebGLUnsuppo
         const handleMouseLeave = () => {
             fluidMaterial.uniforms.iMouse.value.set(0, 0, 0, 0);
         };
-        container.addEventListener("mousemove", handleMouseMove);
-        container.addEventListener("mouseleave", handleMouseLeave);
+        //container.addEventListener("mousemove", handleMouseMove);
+        //container.addEventListener("mouseleave", handleMouseLeave);
+        window.addEventListener("mousemove", handleMouseMove);
+        window.addEventListener("mouseleave", handleMouseLeave);
+
         // Resize Event
         const handleResize = () => {
             const width = container.clientWidth;
