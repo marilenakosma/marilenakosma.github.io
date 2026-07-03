@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Tech from './components/Tech'
 import Iridescence from './components/backgrounds/Iridescence'
+import FluidBackground from './components/backgrounds/FluidBackground'
 import Footer from './components/Footer'
 const App = () => {
   const [webGlSupported, setWebglSupported] = useState(true)
@@ -15,13 +16,10 @@ const App = () => {
       <BrowserRouter>
         <div className="fixed inset-0 h-full w-full top-0 left-0 -z-10">
           {webGlSupported ? (
-            <Iridescence
-              color={[0.3, 0.4, 0.7]} //#8099cc
-              mouseReact={false}
-              amplitude={0.1}
-              speed={1.0}
-              onWebGLUnsupported={() => setWebglSupported(false)}
-            />
+            <FluidBackground
+              onWebGLUnsupported={
+                () =>
+                  setWebglSupported(false)} />
           ) : (
             // CSS fallback 
             <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
