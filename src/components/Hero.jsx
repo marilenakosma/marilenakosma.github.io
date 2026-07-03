@@ -9,10 +9,9 @@ export const Hero = () => {
 
       {/*bg-[rgba(0,0,0,0.3)] */}
       <div
-        className={`absolute inset-0 top-[150px] max-w-7xl mx-auto ${styles.paddingX}
+        className={`absolute inset-0 top-[150px] max-w-5xl sm:max-w-3xl md:max-w-5xl lg:max-w-7xl mx-auto ${styles.paddingX}
          flex flex-row items-start gap-5`}
       >
-
         <div>
           <h1 className={`${styles.heroHeadText} text-white text-shadow-lg`}>
             Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena,</span>
@@ -21,7 +20,7 @@ export const Hero = () => {
             a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br className="hidden sm:inline"></br> UI/UX. I work mainly with React and <br className="hidden sm:inline"></br>
             React Native, and strive to learn about <br className="hidden sm:inline"></br> how design decisions affect real users.
           </p>
-          <div className='flex flex-row gap-4 md:gap-8 justify-center'>
+          <div className='flex flex-row gap-4 md:gap-8 lg:gap-4 justify-center'>
             <a
               href={cv}
               target="_blank"

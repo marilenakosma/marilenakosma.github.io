@@ -20,7 +20,7 @@ export const Tech = () => {
       <div className="flex flex-row justify-center flex-wrap gap-4 max-w-4xl mx-auto mb-4 md:mb-6 lg:mb-8">
         {
           technologies.map((tech) => (
-            <div key={tech.name} className="flex flex-col items-center justify-end gap-4 mb-7">
+            <div key={tech.name} className="flex flex-col items-center justify-end gap-4 mb-22 sm:mb-22 md:mb-10 lg:mb-8">
               <StickerPeel
                 aria-label={tech.name}
                 imageSrc={tech.icon}
@@ -34,7 +34,7 @@ export const Tech = () => {
                 peelDirection={1}
 
               />
-              <p className="text-white text-[14px] sm:text-[15px]">
+              <p className="text-white text-base sm:text-[18px]">
                 {tech.name}
               </p>
             </div>

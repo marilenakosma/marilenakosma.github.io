@@ -63,7 +63,7 @@ export const Navbar = () => {
                         window.scrollTo(0, 0)
                     }}
                 >
-                    <h2 className="text-white text-base lg:text-lg 
+                    <h2 className="text-white text-[17px] sm:text-base md:text-base lg:text-lg 
                 font-bold cursor-pointer flex">
                         Marilena Kosma
                     </h2>
