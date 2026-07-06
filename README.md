@@ -12,7 +12,6 @@ Built on **React + Vite**, blending glassmorphism, 3D visuals and smooth animati
 [![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-v4-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Three.js](https://img.shields.io/badge/Three.js-v0.181-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
 [![Motion](https://img.shields.io/badge/Motion-v12-FF0055?style=for-the-badge&logo=framer&logoColor=white)](https://motion.dev/)
-[![GSAP](https://img.shields.io/badge/GSAP-v3-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](https://gsap.com/)
 
 - **React 19** – UI component framework
 - **Vite 7** – Build tool & dev server
