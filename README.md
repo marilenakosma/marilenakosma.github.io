@@ -1,6 +1,7 @@
 # Portfolio Website
 
-My personal portfolio,built on **React + Vite**, blending glassmorphism,3D visuals, smooth animations, and accessible design.
+My personal portfolio website,showcasing my experience and projects as a junior fullstack developer.
+Built on **React + Vite**, blending glassmorphism, 3D visuals and smooth animations
 
 ---
 
