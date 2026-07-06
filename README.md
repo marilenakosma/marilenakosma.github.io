@@ -16,7 +16,7 @@ Built with **React and Vite**, blending glassmorphism, 3D visuals and smooth ani
 - **React 19** – UI component framework
 - **Vite 7** – Build tool & dev server
 - **TailwindCSS v4** – Utility-first styling
-- **Three.js / OGL** – WebGL 3D background rendering
+- **Three.js** – WebGL 3D background rendering
 - **Motion (Framer Motion)** – Declarative animations
 - **Formspree** – Serverless contact form backend
 - **React Parallax Tilt** – Tilt & glare card effects
