@@ -25,7 +25,6 @@ export const Hero = () => {
               href={cv}
               target="_blank"
               rel="noopener noreferrer"
-              //download={"cv-Maria-Eleni-Kosma.pdf"}
               className={`${styles.glassButtonStyles} mt-8 flex flex-row gap-4 items-center justify-center`}
               aria-label="View Resume"
             >
