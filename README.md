@@ -19,7 +19,6 @@ Built on **React + Vite**, blending glassmorphism, 3D visuals and smooth animati
 - **TailwindCSS v4** – Utility-first styling
 - **Three.js / OGL** – WebGL 3D background rendering
 - **Motion (Framer Motion)** – Declarative animations
-- **GSAP** – Timeline-based animation sequences
 - **Formspree** – Serverless contact form backend
 - **React Parallax Tilt** – Tilt & glare card effects
 
