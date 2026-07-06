@@ -50,7 +50,7 @@ import touristguideSmall from "./projects/touristguideSmall.png";
 import recipeFull from "./projects/recipeFull.png";
 import doctor from './projects/DoctorEverywhere.png'
 
-import cv from './cv/cv_Maria_Eleni_Kosma.pdf'
+import cv from './cv/cv-github-Maria-Eleni-Kosma.pdf'
 
 export {
   github,
