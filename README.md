@@ -25,10 +25,6 @@ My personal portfolio,built on **React + Vite**, blending glassmorphism,3D visua
 
 ---
 
-## System Architecture
-
-The portfolio is structured as a **single-page React application** with a clear component hierarchy, centralised data constants, and reusable animation utilities.
-
 ## Project Structure
 
 ```
