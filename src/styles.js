@@ -77,7 +77,7 @@ const styles = {
     duration-300`,
 
   educationHeadText:
-    `text-white text-center font-semibold text-lg sm:text-lg md:text-xl flex-1 mb-2`,
+    `text-white text-center font-semibold text-lg xs:text-base sm:text-lg md:text-xl flex-1 mb-2 mr-2 ml-2`,
   educationDescriptionText:
     `text-white text-balance font-light m-1 xs:m-6 sm:m-4 md:m-2 text-base leading-relaxed 
     sm:text-base md:text-lg text-secondary tracking-wider flex-1`,
@@ -94,7 +94,8 @@ const styles = {
     `text-white text-center text-lg text-balance p-1 lg:pl-5 lg:pr-5 font-light 
      leading-relaxed sm:text-lg md:text-lg text-secondary tracking-wider`,
   githubButtonStyles:
-    `relative rounded-3xl w-9 h-9 sm:w-10 sm:h-10 bg-gray-100 flex justify-center items-center  
+    `relative rounded-3xl w-11 h-11 sm:w-11 sm:h-11 md:w-9 md:h-9 lg:h-9 w-9
+     bg-gray-100 flex justify-center items-center  
      shadow-inner text-gray-8
      cursor-pointer shrink-0 
      [&:hover]:scale-110 transition duration-300 

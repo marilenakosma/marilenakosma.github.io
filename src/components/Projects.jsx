@@ -4,7 +4,6 @@ import { SectionWrapper } from "../utils/SectionWrapper.jsx";
 import { motion, useReducedMotion } from "motion/react"
 import { fadeIn, textVariant } from "../utils/motion";
 import Tilt from 'react-parallax-tilt';
-import { github } from "../assets/index.js";
 
 const ProjectCard = ({ index, project }) => {
 
@@ -127,7 +126,7 @@ export const Projects = () => {
           Projects
         </h2>
       </motion.div>
-      <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl  mx-auto
+      <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 max-w-5xl  mx-auto
                   place-items-center items-stretch gap-4  p-5">
         {
           projects.map((project, index) => (
