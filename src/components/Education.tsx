@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { motion } from "motion/react"
-import { styles } from "../styles";
-import { education } from "../constants";
-import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from "../styles.js";
+import { education } from "../constants/index.js";
+import { SectionWrapper } from "../utils/SectionWrapper.js";
+import { fadeIn, textVariant } from "../utils/motion.js";
 import Tilt from 'react-parallax-tilt';
 
 const EducationCard = ({ index, education }) => {

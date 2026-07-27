@@ -18,7 +18,7 @@ export const Navbar = () => {
         if (!items)
             return;
 
-        const itemsArr = Array.from(items);
+        const itemsArr = Array(items);
         const focused = document.activeElement;
         const currentIndex = itemsArr.indexOf(focused);
 

@@ -1,8 +1,8 @@
-import { styles } from "../styles";
-import { projects } from "../constants";
-import { SectionWrapper } from "../utils/SectionWrapper.jsx";
+import { styles } from "../styles.js";
+import { projects } from "../constants/index.js";
+import { SectionWrapper } from "../utils/SectionWrapper.js";
 import { motion, useReducedMotion } from "motion/react"
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion.js";
 import Tilt from 'react-parallax-tilt';
 
 const ProjectCard = ({ index, project }) => {

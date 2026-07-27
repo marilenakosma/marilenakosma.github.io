@@ -2,9 +2,9 @@ import { useRef, useEffect } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 
 import { styles } from "../styles.js";
-import { SectionWrapper } from "../utils/SectionWrapper.jsx";
+import { SectionWrapper } from "../utils/SectionWrapper.js";
 
-import TextField from "./ui/TextField.jsx";
+import TextField from "./ui/TextField.js";
 
 import { motion, useReducedMotion } from "motion/react"
 import { textVariant, easeOut } from "../utils/motion.js";

@@ -1,9 +1,9 @@
 import { motion } from "motion/react"
 import { styles } from "../styles.js";
 import { technologies } from "../constants/index.js";
-import { SectionWrapper } from "../utils/SectionWrapper.jsx";
-import { textVariant } from "../utils/motion";
-import StickerPeel from './StickerPeel.jsx'
+import { SectionWrapper } from "../utils/SectionWrapper.js";
+import { textVariant } from "../utils/motion.js";
+import StickerPeel from './StickerPeel.js'
 
 export const Tech = () => {
   return (
