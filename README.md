@@ -5,6 +5,12 @@ Built with **React and Vite**, blending glassmorphism, 3D visuals and smooth ani
 
 ---
 
+## Live Demo
+
+**[marilenakosma.github.io](https://marilenakosma.github.io/)**
+
+---
+
 ## Technologies Used
 
 [![React](https://img.shields.io/badge/-ReactJs-61DAFB?logo=react&logoColor=white&style=for-the-badge)](https://react.dev/)
@@ -115,12 +121,6 @@ PersonalProfile/
 | `npm run build`   | Compiles and optimises the application for production.          |
 | `npm run preview` | Serves the production build locally for verification.           |
 | `npm run lint`    | Runs ESLint across all source files.                            |
-
----
-
-## Live Demo
-
-**[marilenakosma.github.io](https://marilenakosma.github.io/)**
 
 ---
 
