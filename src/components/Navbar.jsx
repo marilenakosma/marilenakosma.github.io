@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react'
-import { Link } from 'react-router'
 import { styles } from '../styles';
 import { navLinks } from '../constants/index';
 import { menu, close } from '../assets';
@@ -55,8 +54,7 @@ export const Navbar = () => {
             </a>
             <div className="w-full flex justify-between
             items-center max-w-7xl mx-auto">
-                <Link
-                    to="/"
+                <button
                     className="flex items-center gap-2"
                     onClick={() => {
                         setActive("");
@@ -67,7 +65,7 @@ export const Navbar = () => {
                 font-bold cursor-pointer flex">
                         Marilena Kosma
                     </h2>
-                </Link>
+                </button>
 
                 <ul className="list-none hidden sm:flex 
                 flex-row gap-10">
