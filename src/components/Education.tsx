@@ -1,12 +1,12 @@
 import { useState } from "react";
 import { motion } from "motion/react"
 import { styles } from "../styles.js";
-import { education } from "../constants/index.js";
+import { education, EducationItem } from "../constants/index";
 import { SectionWrapper } from "../utils/SectionWrapper.js";
 import { fadeIn, textVariant } from "../utils/motion.js";
 import Tilt from 'react-parallax-tilt';
 
-const EducationCard = ({ index, education }) => {
+const EducationCard = ({ index, education }: { index: number, education: EducationItem }) => {
   return (
 
     <Tilt
@@ -61,7 +61,7 @@ const EducationCard = ({ index, education }) => {
 export const Education = () => {
   return (
     <>
-      <motion.div className="mb-8" variants={textVariant()}>
+      <motion.div className="mb-8" variants={textVariant(0)}>
         <h2 className={styles.sectionHeadText}>
           Education
         </h2>

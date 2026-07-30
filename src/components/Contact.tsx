@@ -7,13 +7,13 @@ import { SectionWrapper } from "../utils/SectionWrapper.js";
 import TextField from "./ui/TextField.js";
 
 import { motion, useReducedMotion } from "motion/react"
-import { textVariant, easeOut } from "../utils/motion.js";
+import { textVariant, easeOut } from "../utils/motion";
 
 
 export const Contact = () => {
   const [state, handleSubmit, reset] = useForm("mojyjjvd");
 
-  const formRef = useRef(null);
+  const formRef = useRef<HTMLFormElement>(null);
 
   useEffect(() => {
     if (state.succeeded) {
@@ -25,7 +25,7 @@ export const Contact = () => {
     }
   }, [state.succeeded]);
 
-  const errorValidation = (name) => {
+  const errorValidation = (name: string) => {
     return (
       <ValidationError
         prefix={name.charAt(0).toUpperCase() + name.slice(1)}
@@ -40,7 +40,7 @@ export const Contact = () => {
       <div className="py-8 lg:py-12 px-4 md:px-8 mx-auto max-w-3xl">
         <form className="space-y-8" ref={formRef} onSubmit={handleSubmit}>
           <motion.fieldset
-            variants={textVariant()}>
+            variants={textVariant(0)}>
             <legend
               className={`${styles.sectionHeadText} mb-4 md:mb-6 mt-6 md:mt-10`}>Contact Me
             </legend>

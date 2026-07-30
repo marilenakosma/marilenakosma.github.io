@@ -117,8 +117,14 @@ const technologies = [
   },
 ];
 
-
-const education = [
+export type EducationItem = {
+  logo: string
+  logo_alt: string
+  name: string
+  description: string
+  date: string
+}
+const education: EducationItem[] = [
   {
     logo: pada,
     logo_alt: "University of West Attica logo",
@@ -161,8 +167,22 @@ const education = [
 
 ]
 
+export type Project = {
+  name: string
+  description: string
+  tags: Tags[]
+  image: string
+  image_alt: string
+  source_code_link: string
+}
 
-const projects = [
+export type Tags = {
+  logo: string
+  logo_alt: string
+  name: string
+}
+
+const projects: Project[] = [
   {
     name: "Serenify(thesis)",
     description:

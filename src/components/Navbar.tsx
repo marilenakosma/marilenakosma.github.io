@@ -1,16 +1,16 @@
 import { useEffect, useState, useRef } from 'react'
 import { styles } from '../styles';
 import { navLinks } from '../constants/index';
-import { menu, close } from '../assets';
+import { menu, close } from '../assets/index';
 import '../index.css';
 
 export const Navbar = () => {
     const [active, setActive] = useState("");
     const [toggle, setToggle] = useState(false);
-    const menuRef = useRef(null);
-    const toggleBtnRef = useRef(null);
+    const menuRef = useRef<HTMLUListElement>(null);
+    const toggleBtnRef = useRef<HTMLButtonElement>(null);
 
-    const handleMenuKeyDown = (e) => {
+    const handleMenuKeyDown = (e: React.KeyboardEvent) => {
         if (!toggle)
             return; // if menu isn't open
 
@@ -18,9 +18,9 @@ export const Navbar = () => {
         if (!items)
             return;
 
-        const itemsArr = Array(items);
+        const itemsArr = Array.from(items) as HTMLElement[];
         const focused = document.activeElement;
-        const currentIndex = itemsArr.indexOf(focused);
+        const currentIndex = itemsArr.indexOf(focused as HTMLElement);
 
         if (e.key === 'Escape') {
             setToggle(false);
@@ -38,7 +38,7 @@ export const Navbar = () => {
 
     useEffect(() => {
         if (toggle) {
-            menuRef.current?.querySelector('[role="menuitem"] a')?.focus();
+            (menuRef.current?.querySelector('[role="menuitem"] a') as HTMLElement)?.focus();
         }
     }, [toggle]);
 

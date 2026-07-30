@@ -1,17 +1,17 @@
 import { styles } from "../styles.js";
-import { projects } from "../constants/index.js";
+import { projects, Project } from "../constants/index";
 import { SectionWrapper } from "../utils/SectionWrapper.js";
 import { motion, useReducedMotion } from "motion/react"
-import { fadeIn, textVariant } from "../utils/motion.js";
+import { textVariant, fadeIn } from "../utils/motion";
 import Tilt from 'react-parallax-tilt';
 
-const ProjectCard = ({ index, project }) => {
+const ProjectCard = ({ index, project }: { index: number; project: Project }) => {
 
   const shouldReduceMotion = useReducedMotion()
   const isPortrait = project.name === "Serenify(thesis)"
   return (
     <Tilt
-      tiltEnable={false}
+      tiltEnable={true}
       glareEnable={true}
       glareMaxOpacity={0.8}
       glareColor="white"
@@ -121,7 +121,7 @@ const ProjectCard = ({ index, project }) => {
 export const Projects = () => {
   return (
     <>
-      <motion.div className="mb-8" variants={textVariant()}>
+      <motion.div className="mb-8" variants={textVariant(0)}>
         <h2 className={styles.sectionHeadText}>
           Projects
         </h2>

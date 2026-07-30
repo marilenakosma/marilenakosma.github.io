@@ -1,14 +1,14 @@
 import { motion } from "motion/react"
 import { styles } from "../styles.js";
 import { technologies } from "../constants/index.js";
-import { SectionWrapper } from "../utils/SectionWrapper.js";
-import { textVariant } from "../utils/motion.js";
-import StickerPeel from './StickerPeel.js'
+import { SectionWrapper } from "../utils/SectionWrapper";
+import { textVariant } from "../utils/motion";
+import StickerPeel from './StickerPeel'
 
 export const Tech = () => {
   return (
     <>
-      <motion.div className="mb-10" variants={textVariant()}>
+      <motion.div className="mb-10" variants={textVariant(0)}>
         <h2 className={styles.sectionHeadText}>
           Technologies
         </h2>
@@ -22,10 +22,10 @@ export const Tech = () => {
           technologies.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center justify-end gap-4 mb-22 sm:mb-22 md:mb-10 lg:mb-8">
               <StickerPeel
-                aria-label={tech.name}
+                //aria-label={tech.name}
                 imageSrc={tech.icon}
                 width={100}
-                height={100}
+                // height={100}
                 rotate={0}
                 peelBackHoverPct={40}
                 peelBackActivePct={40}

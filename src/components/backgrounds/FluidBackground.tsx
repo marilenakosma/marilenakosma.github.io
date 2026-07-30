@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { KeyboardEvent, useEffect, useRef } from 'react';
 import * as THREE from 'three';
-// --- SHADERS (From shaders.jsx, with syntax fixes) ---
+
 const vertexShader = `
 varying vec2 vUv;
 void main() {
@@ -136,7 +136,7 @@ void main() {
    gl_FragColor = vec4(col,1.0);
 }
 `;
-// --- COMPONENT LOGIC ---
+
 const defaultConfig = {
     brushSize: 25.0,
     brushStrength: 0.5,
@@ -151,14 +151,20 @@ const defaultConfig = {
     colorIntensity: 1.0,
     softness: 1.0,
 };
-function hexToRgb(hex) {
+function hexToRgb(hex: string) {
     const r = parseInt(hex.slice(1, 3), 16) / 255;
     const g = parseInt(hex.slice(3, 5), 16) / 255;
     const b = parseInt(hex.slice(5, 7), 16) / 255;
     return [r, g, b];
 }
-export default function FluidBackground({ config = defaultConfig, onWebGLUnsupported, ...rest }) {
-    const mountRef = useRef(null);
+
+interface FluidBackgroundProps extends React.HTMLAttributes<HTMLDivElement> {
+    config?: typeof defaultConfig;
+    onWebGLUnsupported: () => void;
+}
+
+export default function FluidBackground({ config = defaultConfig, onWebGLUnsupported, ...rest }: FluidBackgroundProps) {
+    const mountRef = useRef<HTMLDivElement>(null);
     useEffect(() => {
         if (!mountRef.current) return;
         // Check WebGL Support (Fallback gracefully)
@@ -169,7 +175,7 @@ export default function FluidBackground({ config = defaultConfig, onWebGLUnsuppo
             return;
         }
         const container = mountRef.current;
-        let animationFrameId;
+        let animationFrameId: number;
         // --- Setup Three.js ---
         const scene = new THREE.Scene();
         const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
@@ -228,7 +234,7 @@ export default function FluidBackground({ config = defaultConfig, onWebGLUnsuppo
         // Mouse Events
         let mouseX = 0, mouseY = 0, prevMouseX = 0, prevMouseY = 0;
         let lastMoveTime = 0;
-        const handleMouseMove = (e) => {
+        const handleMouseMove = (e: MouseEvent) => {
             //const rect = container.getBoundingClientRect();
             prevMouseX = mouseX;
             prevMouseY = mouseY;

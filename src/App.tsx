@@ -38,7 +38,7 @@ const App = () => {
         className={`fixed inset-0 z-10 flex justify-content items-center bg-white
         ${loaded ? 'opacity-0' : 'opacity-100'}
         ${loaded ? 'pointer-events-none' : 'pointer-events-auto'}
-        transition-opacity 0.4s`}
+        transition-opacity duration-400`}
       >
         <Loader />
       </div>

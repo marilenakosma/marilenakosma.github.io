@@ -1,6 +1,6 @@
 import { useRef, useEffect, useMemo, CSSProperties } from 'react';
 import { gsap } from 'gsap';
-import { Draggable } from 'gsap/Draggable';
+import { Draggable } from "gsap/Draggable";
 
 gsap.registerPlugin(Draggable);
 
@@ -16,6 +16,7 @@ interface StickerPeelProps {
   lightingIntensity?: number;
   peelDirection?: number;
   className?: string;
+  //ariaLabel?: string;
 }
 
 interface CSSVars extends CSSProperties {
@@ -35,7 +36,6 @@ interface CSSVars extends CSSProperties {
 
 const StickerPeel: React.FC<StickerPeelProps> = ({
   imageSrc,
-  //'aria-label': ariaLabel,
   rotate = 30,
   peelBackHoverPct = 30,
   peelBackActivePct = 40,
@@ -45,7 +45,8 @@ const StickerPeel: React.FC<StickerPeelProps> = ({
   shadowIntensity = 0.6,
   lightingIntensity = 0.1,
   peelDirection = 0,
-  className = ''
+  className = '',
+  //ariaLabel = 
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const dragTargetRef = useRef<HTMLDivElement>(null);
