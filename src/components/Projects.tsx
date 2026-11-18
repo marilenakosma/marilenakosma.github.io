@@ -38,7 +38,7 @@ const ProjectCard = ({ index, project }: { index: number; project: Project }) =>
 
         <div className="flex flex-wrap 
         min-h-5
-        md:min-h-[7rem]
+        md:min-h-28
         lg:min-h-5
         gap-2 
         sm:gap-3

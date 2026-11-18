@@ -70,7 +70,7 @@ export const Contact = () => {
             </div>
 
             <div className="flex flex-row justify-center mt-4">
-              <button type="submit" className={`${styles.glassButtonStyles}`} disabled={state.submitting} aria-busy={state.submitting}>
+              <button type="submit" className={`${styles.submitButtonStyles}`} disabled={state.submitting} aria-busy={state.submitting}>
                 {state.submitting ? "Sending..." : "Submit"}
               </button>
             </div>

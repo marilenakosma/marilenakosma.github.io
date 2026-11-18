@@ -12,7 +12,7 @@ export const Hero = () => {
       {/*bg-[rgba(0,0,0,0.3)] */}
       <div
         className={`relative pt-[190px] pb-20 max-w-7xl mx-auto ${styles.paddingX}
-         flex flex-row items-start gap-5 min-h-[90vh] sm:min-h-[90vh] lg:min-h-[100vh]`}
+         flex flex-row items-start gap-5 min-h-[90vh] sm:min-h-[90vh] lg:min-h-screen`}
       >
         <motion.div
           initial="hidden"
@@ -20,12 +20,12 @@ export const Hero = () => {
         >
           <motion.h1 variants={easeOut(30)}
             className={`${styles.heroHeadText} text-white text-shadow-lg`}>
-            Hi, I'm <span className='decoration-[#F64FFF] underline'>Marilena,</span>
+            Hi, I'm Marilena,
           </motion.h1>
           <motion.p
             variants={easeOut(30)}
             className={`${styles.heroSubText} mt-2 text-balance text-white-100 text-shadow-lg`}>
-            a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br className="hidden sm:inline"></br> UI/UX. I work mainly with React and <br className="hidden sm:inline"></br>
+            a fullstack developer who <span className='italic font-semibold sm:font-semibold md:font-semibold lg:font-semibold'>cares</span> about <br className="hidden sm:inline"></br> UI/UX. I work mainly with React and <br className="hidden sm:inline"></br>
             React Native, and strive to learn about <br className="hidden sm:inline"></br> how design decisions affect real users.
           </motion.p>
 
@@ -39,7 +39,7 @@ export const Hero = () => {
               href={cv}
               target="_blank"
               rel="noopener noreferrer"
-              className={`${styles.glassButtonStyles} mt-8 flex flex-row gap-4 items-center justify-center`}
+              className={`${styles.resumeButtonStyles} mt-8 flex flex-row gap-4 items-center justify-center`}
               aria-label="View Resume"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" className="bi bi-file-person-fill" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
@@ -65,7 +65,7 @@ export const Hero = () => {
         </motion.div>
       </div>
 
-    </section>
+    </section >
 
   );
 };

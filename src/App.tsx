@@ -6,6 +6,7 @@ import Projects from './components/Projects'
 import Contact from './components/Contact'
 import Tech from './components/Tech'
 import FluidBackground from './components/backgrounds/FluidBackground'
+import Iridescence from './components/Iridescence'
 import Footer from './components/Footer'
 import Loader from './components/ui/Loader'
 
@@ -43,12 +44,12 @@ const App = () => {
         <Loader />
       </div>
 
-      <div className="fixed top-0 left-0 w-full h-[100vh] -z-10">
+      <div className="fixed top-0 left-0 w-full h-screen -z-10">
         {webGlSupported ? (
           <FluidBackground
             onWebGLUnsupported={() => setWebglSupported(false)} />
         ) : (
-          <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-teal-600" />
+          <div className="w-full h-full bg-linear-to-r/srgb from-indigo-500 to-blue-600" />
         )}
       </div>
       <Navbar />

@@ -6,7 +6,7 @@ const styles = {
   /* [box-shadow:0_4px_30px_rgba(0,0,0,0.5)] */
   /* border-[rgba(255,255,255,0.3)] */
   glassBg:
-    `bg-white/20 bg-[rgba(0,0,0,0.4)] bg-white/15`,
+    `bg-[rgba(0,0,0,0.4)] bg-white/15`,
   glassNavbarBorder:
     `border border-transparent border-b-white/50`,
   glassBorder:
@@ -19,7 +19,7 @@ const styles = {
      sm:leading-tight lg:leading-[98px] mt-2`,
   heroSubText:
     `text-[#dfd9ff] font-regular text-wrap text-lg xs:text-lg sm:text-xl 
-     sm:leading-relaxed md:leading-relaxed md:text-2xl lg:text-3xl lg:leading-[42px]
+     sm:leading-relaxed md:leading-relaxed lg:leading-relaxed md:text-2xl lg:text-3xl lg:leading-[42px]
      tracking-wider sm:tracking-normal md:tracking-normal lg:tracking-normal`,
 
   sectionHeadText:
@@ -27,9 +27,19 @@ const styles = {
   sectionSubText:
     `mb-8 text-secondary text-lg md:text-lg lg:text-xl`,
 
-  glassButtonStyles:
+  resumeButtonStylesAlt:
     `relative rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium 
-     shadow-2xl/20 inset-shadow-current/20 
+     bg-white/20 backdrop-blur-xs border border-white/20
+     w-fit text-white cursor-pointer 
+     [&:hover]:scale-110 transition duration-300
+     before:absolute before:inset-0 
+     hover:bg-white/20 hover:border-white/40 hover:scale-105
+     active:bg-white/20 active:scale-100
+     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary
+     overflow-hidden`,
+  resumeButtonStyles:
+    `relative rounded-3xl px-4 py-2 md:px-6 md:py-3 font-medium 
+      
      bg-gray-200 inset-shadow-xs w-fit cursor-pointer 
      [&:hover]:scale-110 transition duration-300
      before:absolute before:inset-0 before:bg-linear-to-b
