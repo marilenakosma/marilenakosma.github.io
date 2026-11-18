@@ -3,6 +3,7 @@ import { easeOut } from "../utils/motion";
 
 import { styles } from '../styles'
 import { cv } from '../assets';
+import Card from '../components/Card';
 
 export const Hero = () => {
   return (
@@ -27,6 +28,11 @@ export const Hero = () => {
             a <span className='text-[#F64FFF]'>fullstack</span> developer who cares about <br className="hidden sm:inline"></br> UI/UX. I work mainly with React and <br className="hidden sm:inline"></br>
             React Native, and strive to learn about <br className="hidden sm:inline"></br> how design decisions affect real users.
           </motion.p>
+
+          {/*<div className="flex flex-row justify-center">
+            <Card />
+          </div>*/}
+
           <div className='flex flex-row gap-4 md:gap-8 lg:gap-4 justify-center'>
             <motion.a
               variants={easeOut(10)}
